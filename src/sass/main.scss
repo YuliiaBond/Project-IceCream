@@ -4,29 +4,4 @@
  */
 
 // Стили для файла с примером HTML-фрагмента
-// @import './example';
-
-// Подключение нормалайз
-@import './base/normalize';
-
-// Подключение переменных
-@import './utils/variables';
-
-// Подключение шрифтов
-@import './utils/font';
-
-@import './base/common';
-
-// Подключение стилей контейнера
-@import './base/container';
-
-// Подключение секций
-@import './components/hero';
-@import './components/header';
-@import './components/mobile-menu';
-@import './components/products';
-@import './components/making';
-@import './components/gallery';
-@import './components/reviews';
-@import './components/locations';
-@import './components/footer';
+@import './example';
