@@ -9,6 +9,8 @@
 // Подключение нормалайз
 @import './base/normalize';
 
+@import './base/common';
+
 // Подключение стилей контейнера
 @import './base/container';
 
@@ -17,3 +19,14 @@
 
 // Подключение переменных
 @import './utils/variables';
+
+// Подключение секций
+@import './components/hero';
+@import './components/header';
+@import './components/mobile-menu';
+@import './components/products';
+@import './components/making';
+@import './components/gallery';
+@import './components/reviews';
+@import './components/locations';
+@import './components/footer';
