@@ -5,3 +5,15 @@
 
 // Стили для файла с примером HTML-фрагмента
 @import './example';
+
+// Подключение нормалайз
+@import './base/normalize';
+
+// Подключение стилей контейнера
+@import './base/container';
+
+// Подключение шрифтов
+@import './utils/font';
+
+// Подключение переменных
+@import './utils/variables';
