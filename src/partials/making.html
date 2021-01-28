@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>making</title>
+    <link rel="stylesheet" href="" />
+  </head>
+  <body>
+    <div class="section-making">
+      <div class="container">
+       <h2 class="making-title">
+        tradition and love</h2><span class="title-made">how it’</br>made?</span>
+        <picture
+          ><source
+            media="(min-width: 1200px)"
+            srcset="
+              ./images/desktop/webp/Cow1200.webp 1x,
+              ./images/desktop/webp/Cow1200.webp 2x,
+              ./images/desktop/webp/Cow1200.webp 3x
+            "
+            type="image/webp" />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/tablet/webp/Cow768.webp    1x,
+              ./images/tablet/webp/Cow768@2x.webp 2x,
+              ./images/tablet/webp/Cow768@3x.webp 3x
+            "
+            type="image/webp" />
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ./images/mobile/webp/Cow320.webp    1x,
+              ./images/mobile/webp/Cow320@2x.webp 2x,
+              ./images/mobile/webp/Cow320@3x.webp 3x
+            "
+            type="image/webp" />
+          <source
+            media="(min-width: 1200px)"
+            srcset="
+              ./images/desktop/Cow1200.jpg    1x,
+              ./images/desktop/Cow1200@2x.jpg 2x,
+              ./images/desktop/Cow1200@3x.jpg 3x
+            " />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/tablet/Cow768.jpg    1x,
+              ./images/tablet/Cow768@2x.jpg 2x,
+              ./images/tablet/Cow768@3x.jpg 3x
+            " />
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ./images/mobile/Cow320.jpg    1x,
+              ./images/mobile/Cow320@2x.jpg 2x,
+              ./images/mobile/Cow320@3x.jpg 3x
+            " />
+          <img
+            srcset="
+              ./images/mobile/Cow320.jpg    1x,
+              ./images/mobile/Cow320@2x.jpg 2x,
+              ./images/mobile/Cow320@3x.jpg 3x
+            "
+            src="./images/mobile/Cow320.jpg"
+            alt="Cow"
+            loading="lazy"
+        /></picture>
+        <p class="description">
+          Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo
+          cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at
+          justo fringilla.
+        </p>
+        <p class="promotion">
+          Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum.
+          Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl
+          suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh,
+          tincidunt.</br> Aliquam erat volutpat. Aenean accumsan.
+        </p>
+        <button type="button" class="massa-btn btn">Read more ></button>
+        <ul class="massa-list list">
+          <li class="massa-item item">
+            <svg class="icon-massa icon" width="33" height="50"><use href="#"></use></svg>
+            721
+            <p>Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
+          </li>
+          <li class="massa-item item">
+            <svg class="icon-massa icon" width="33" height="50"><use href="#"></use></svg>
+            16kg
+            <p>Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
+          </li>
+          <li class="massa-item item">
+            <svg class="icon-massa icon" width="33" height="50"><use href="#"></use></svg>
+            84
+            <p>Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
+    <!-- <include src="./partials/example.html"></include> -->
+
+    <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
+    <script src="./index.js"></script>
+  </body>
+</html>

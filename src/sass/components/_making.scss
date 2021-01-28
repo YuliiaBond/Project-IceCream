@@ -1,0 +1,90 @@
+.list {
+  margin: 0px;
+  padding: 0px;
+}
+li {
+  list-style: none;
+  display: inline-block;
+}
+a {
+  text-decoration: none;
+  font-style: normal;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media screen and (min-width: 320px) {
+    width: 320px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}
+.section-making {
+  background-color: $secondary-bg-color;
+
+  @media screen and (max-width: 767px) {
+    padding-top: 125px;
+    padding-right: auto;
+    padding-bottom: 145px;
+    padding-left: auto;
+  }
+}
+
+.making-title {
+  margin-top: 0px;
+  margin-bottom: 15px;
+  font-size: 18px;
+  line-height: 1.17;
+  text-align: center;
+  text-transform: uppercase;
+  color: $h3-text-color;
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+}
+.title-made {
+  margin-bottom: 26px;
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 34px;
+  line-height: 1.15px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $accent-color;
+}
+.description {
+  padding-right: 50px;
+  padding-left: 50px;
+  margin-top: 46px;
+  margin-bottom: 47px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.58;
+  color: $secondary-text-color;
+}
+.promotion {
+  padding-right: 50px;
+  padding-left: 50px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.58;
+  color: $third-text-color;
+}
