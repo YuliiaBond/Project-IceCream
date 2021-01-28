@@ -9,16 +9,16 @@
 // Подключение нормалайз
 @import './base/normalize';
 
-@import './base/common';
-
-// Подключение стилей контейнера
-@import './base/container';
+// Подключение переменных
+@import './utils/variables';
 
 // Подключение шрифтов
 @import './utils/font';
 
-// Подключение переменных
-@import './utils/variables';
+@import './base/common';
+
+// Подключение стилей контейнера
+@import './base/container';
 
 // Подключение секций
 @import './components/hero';
