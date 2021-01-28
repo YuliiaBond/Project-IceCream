@@ -1,0 +1,46 @@
+// $copy специальный значок для авторский прав
+.text-h3 {
+  font-style: 'Titan One', sans0-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.17;
+  letter-spacing: 4%;
+  color: $h3-text-color;
+  text-transform: uppercase;
+}
+
+.text-h4 {
+  font-style: 'Titan One', sans0-serif;
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 1.16;
+  letter-spacing: 6%;
+  color: $accent-color;
+  text-transform: uppercase;
+}
+
+.logo-icon {
+  fill: $accent-color;
+}
+
+.footer-p {
+  font-style: 'DM Sans', sans0-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.86;
+  letter-spacing: 2%;
+  color: $secondary-text-color;
+}
+
+.footer-link {
+  color: $accent-color;
+}
+
+.footer-copy {
+  font-style: 'DM Sans', sans0-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 2%;
+  color: $third-text-color;
+}

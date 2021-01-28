@@ -397,4 +397,50 @@ img {
     width: 1200px;
   }
 }
+
+.text-h2 {
+  font-style: 'Titan One', sans0-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.17;
+  letter-spacing: 4%;
+  color: #ffa5ba;
+  text-transform: uppercase;
+}
+
+.text-h3 {
+  font-style: 'Titan One', sans0-serif;
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 1.16;
+  letter-spacing: 6%;
+  color: #d41443;
+  text-transform: uppercase;
+}
+
+.logo-icon {
+  fill: #d41443;
+}
+
+.footer-p {
+  font-style: 'DM Sans', sans0-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.86;
+  letter-spacing: 2%;
+  color: #000;
+}
+
+.footer-link {
+  color: #d41443;
+}
+
+.footer-copy {
+  font-style: 'DM Sans', sans0-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 2%;
+  color: #907e82;
+}
 /*# sourceMappingURL=main.css.map */
