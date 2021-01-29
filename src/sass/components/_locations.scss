@@ -1,12 +1,12 @@
 .location {
   position: relative;
-  background-color: #fff5f6;
+  background-color: $secondary-bg-color;
   font-weight: 500;
-  font-style: DM sans;
+  font-style: normal;
   font-size: 12px;
   letter-spacing: 0.03em;
   line-height: 1.5;
-  font-family: DM Sans;
+  font-family: $dm-sans;
   .location-content {
     width: 100%;
     position: absolute;
@@ -14,7 +14,7 @@
   }
 }
 .location-list-item {
-  background-color: #fff;
+  background-color: $primary-text-color;
   border-radius: 24px;
   padding: 43px 21px;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
@@ -28,7 +28,7 @@
     letter-spacing: 0.04em;
     line-height: 1.8;
     text-transform: uppercase;
-    color: #fff;
+    color: $primary-text-color;
     margin-bottom: 25px;
   }
   .location-city {
@@ -37,7 +37,7 @@
     margin-bottom: 10px;
   }
   .location-description {
-    color: #907e82;
+    color: $third-text-color;
     position: relative;
   }
 
@@ -46,7 +46,7 @@
   }
   .location-time {
     line-height: 1.8;
-    color: #ffa5ba;
+    color: $h3-text-color;
     position: relative;
   }
   .location-time:first-child {
@@ -64,7 +64,7 @@
     border: 1px solid #e1e1e1;
   }
   .location-contacts {
-    color: #907e82;
+    color: $third-text-color;
   }
 }
 .location-list-item:last-child {
@@ -75,10 +75,10 @@
 }
 
 .place-green {
-  background-color: #c2e297;
+  background-color: $food-truck-color;
 }
 .place-brown {
-  background-color: #f0d1a5;
+  background-color: $cafe-color;
 }
 .location-nav-list {
   font-size: 16px;
@@ -94,20 +94,20 @@
     padding: 14px 0;
   }
   .location-nav-item:first-child a {
-    background-color: #d41342;
+    background-color: $btn-color;
     margin-bottom: 10px;
-    color: #fff;
+    color: $primary-text-color;
   }
   .location-nav-item:last-child a {
-    background-color: #fff;
+    background-color: $primary-text-color;
     margin-bottom: 113px;
-    color: #d41342;
+    color: $btn-color;
   }
   .location-sign {
     width: 3.6px;
     height: 8px;
   }
   .location-sign-red {
-    --color1: #d41342;
+    --color1: $btn-color;
   }
 }
