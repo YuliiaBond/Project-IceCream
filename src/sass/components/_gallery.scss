@@ -1,0 +1,45 @@
+//* Masonry galery */
+  .container-gallery{
+    padding-top: 88px;
+    padding-bottom: 88px;
+    padding-left: 135px;
+    padding-right: 135px;
+  }
+  .masonry__title {
+    margin-bottom: 50px;
+  }
+  img {
+    display: block;
+    min-width: 100%;
+    height: auto;
+  }
+  .masonry-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-inline-start: 0;
+  }
+  .masonry-list__item {
+    display: flex;
+    align-items: center;
+    width: calc((100% - 40px) / 6);
+    // max-width: 1009px;
+    margin-right: 8px;
+
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+  .inside-list__item {
+    position: relative;
+    transform: scale(1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover, &:focus {
+      transform: scale(2);
+      z-index: 10;
+      position: absolute;
+    }
+  }
+  .inside-list__first-item {
+    margin-bottom: 8px;
+  }
