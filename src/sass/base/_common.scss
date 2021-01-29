@@ -11,8 +11,8 @@ body {
   color: $primary-text-color;
   background-color: $bg-color;
 
-  font-family: DM Sans, sans-serif;
-  font-style: 400;
+  font-family: $dm-sans;
+  // font-style: 400;
   font-weight: 400;
   letter-spacing: 0.03em;
 
@@ -48,3 +48,13 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }

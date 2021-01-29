@@ -1,0 +1,113 @@
+.location {
+  position: relative;
+  background-color: $secondary-bg-color;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 12px;
+  letter-spacing: 0.03em;
+  line-height: 1.5;
+  font-family: $dm-sans;
+  .location-content {
+    width: 100%;
+    // position: absolute;
+    top: -83px;
+  }
+}
+.location-list-item {
+  background-color: $primary-text-color;
+  border-radius: 24px;
+  padding: 43px 21px;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  max-width: 220px;
+  margin: 0 auto;
+  .location-place {
+    padding: 3px 19px;
+
+    display: inline-block;
+    border-radius: 4px;
+    letter-spacing: 0.04em;
+    line-height: 1.8;
+    text-transform: uppercase;
+    color: $primary-text-color;
+    margin-bottom: 25px;
+  }
+  .location-city {
+    line-height: 1.8;
+    letter-spacing: 0.04em;
+    margin-bottom: 10px;
+  }
+  .location-description {
+    color: $third-text-color;
+    position: relative;
+  }
+
+  .location-date {
+    line-height: 1.8;
+  }
+  .location-time {
+    line-height: 1.8;
+    color: $h3-text-color;
+    position: relative;
+  }
+  .location-time:first-child {
+    margin-bottom: 10px;
+  }
+  .desc-line {
+    margin-bottom: 50px;
+  }
+  .desc-line::after {
+    content: '';
+    position: absolute;
+    bottom: -25px;
+    display: block;
+    width: 100%;
+    border: 1px solid #e1e1e1;
+  }
+  .location-contacts {
+    color: $third-text-color;
+  }
+}
+.location-list-item:last-child {
+  margin-bottom: 54px;
+}
+.location-list-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.place-green {
+  background-color: $food-truck-color;
+}
+.place-brown {
+  background-color: $cafe-color;
+}
+.location-nav-list {
+  font-size: 16px;
+
+  .location-nav-item a {
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 161px;
+    text-align: center;
+    border-radius: 22px;
+    padding: 14px 0;
+  }
+  .location-nav-item:first-child a {
+    background-color: $btn-color;
+    margin-bottom: 10px;
+    color: $primary-text-color;
+  }
+  .location-nav-item:last-child a {
+    background-color: $primary-text-color;
+    margin-bottom: 113px;
+    color: $btn-color;
+  }
+  .location-sign {
+    width: 3.6px;
+    height: 8px;
+  }
+  .location-sign-red {
+    --color1: $btn-color;
+  }
+}
