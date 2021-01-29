@@ -27,10 +27,6 @@
     "sass": "^1.26.9"
   },
   "dependencies": {
-<<<<<<< HEAD
-    "caniuse-lite": "^1.0.30001180"
-=======
     "jquery": "^3.5.1"
->>>>>>> 442df49c664292bc4a02a0ce3aaefff1e9a2c9f2
   }
 }
