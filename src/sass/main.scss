@@ -9,13 +9,31 @@
 // Подключение нормалайз
 @import './base/normalize';
 
-// Подключение стилей контейнера
-@import './base/container';
+// Подключение переменных
+@import './utils/variables';
 
 // Подключение шрифтов
 @import './utils/font';
 
+<<<<<<< HEAD
 // Подключение переменных
 @import './utils/variables';
 
 @import './components/making';
+=======
+@import './base/common';
+
+// Подключение стилей контейнера
+@import './base/container';
+
+// Подключение секций
+@import './components/hero';
+@import './components/header';
+@import './components/mobile-menu';
+@import './components/products';
+@import './components/making';
+@import './components/gallery';
+@import './components/reviews';
+@import './components/locations';
+@import './components/footer';
+>>>>>>> 442df49c664292bc4a02a0ce3aaefff1e9a2c9f2

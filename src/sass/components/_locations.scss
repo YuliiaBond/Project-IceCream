@@ -1,0 +1,113 @@
+.location {
+  position: relative;
+  background-color: #fff5f6;
+  font-weight: 500;
+  font-style: DM sans;
+  font-size: 12px;
+  letter-spacing: 0.03em;
+  line-height: 1.5;
+  font-family: DM Sans;
+  .location-content {
+    width: 100%;
+    position: absolute;
+    top: -83px;
+  }
+}
+.location-list-item {
+  background-color: #fff;
+  border-radius: 24px;
+  padding: 43px 21px;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  max-width: 220px;
+  margin: 0 auto;
+  .location-place {
+    padding: 3px 19px;
+
+    display: inline-block;
+    border-radius: 4px;
+    letter-spacing: 0.04em;
+    line-height: 1.8;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 25px;
+  }
+  .location-city {
+    line-height: 1.8;
+    letter-spacing: 0.04em;
+    margin-bottom: 10px;
+  }
+  .location-description {
+    color: #907e82;
+    position: relative;
+  }
+
+  .location-date {
+    line-height: 1.8;
+  }
+  .location-time {
+    line-height: 1.8;
+    color: #ffa5ba;
+    position: relative;
+  }
+  .location-time:first-child {
+    margin-bottom: 10px;
+  }
+  .desc-line {
+    margin-bottom: 50px;
+  }
+  .desc-line::after {
+    content: '';
+    position: absolute;
+    bottom: -25px;
+    display: block;
+    width: 100%;
+    border: 1px solid #e1e1e1;
+  }
+  .location-contacts {
+    color: #907e82;
+  }
+}
+.location-list-item:last-child {
+  margin-bottom: 54px;
+}
+.location-list-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.place-green {
+  background-color: #c2e297;
+}
+.place-brown {
+  background-color: #f0d1a5;
+}
+.location-nav-list {
+  font-size: 16px;
+
+  .location-nav-item a {
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 161px;
+    text-align: center;
+    border-radius: 22px;
+    padding: 14px 0;
+  }
+  .location-nav-item:first-child a {
+    background-color: #d41342;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  .location-nav-item:last-child a {
+    background-color: #fff;
+    margin-bottom: 113px;
+    color: #d41342;
+  }
+  .location-sign {
+    width: 3.6px;
+    height: 8px;
+  }
+  .location-sign-red {
+    --color1: #d41342;
+  }
+}
