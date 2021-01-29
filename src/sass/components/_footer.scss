@@ -1,0 +1,116 @@
+footer {
+  background-color: $secondary-bg-color;
+}
+.footer {
+  @media screen and (max-width: 767px) {
+    padding-top: 113px;
+  }
+}
+
+.text {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 43px;
+  }
+}
+
+.text-h3 {
+  font-family: $titan;
+  font-weight: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.17;
+  color: $h3-text-color;
+  text-transform: uppercase;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 17px;
+  }
+}
+.text-wrap {
+  display: block;
+}
+.text-h4 {
+  font-family: $titan;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $accent-color;
+}
+.footer-social {
+  @media screen and (max-width: 767px) {
+    padding-bottom: 43px;
+  }
+}
+.footer-social-list {
+  @media screen and (max-width: 767px) {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 46px;
+  }
+}
+.social-icon:not(:last-child) {
+  @media screen and (max-width: 767px) {
+    margin-right: 28px;
+  }
+}
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  background: $btn-social-color;
+
+  & .logo-icon {
+    fill: $primary-text-color;
+  }
+}
+.social-link:hover,
+.social-link:focus {
+  background: $accent-color;
+
+  transition: color 250ms $timing-function;
+}
+.logo-icon:hover .social-link {
+  background: $accent-color;
+}
+.footer-p {
+  font-family: $dm-sans;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.86;
+  color: $secondary-text-color;
+
+  @media screen and (max-width: 767px) {
+    text-align: right;
+  }
+}
+.footer .link {
+  color: $accent-color;
+}
+.footer-copy {
+  border-top: 1px solid #e1e1e1;
+
+  @media screen and (max-width: 767px) {
+    padding-top: 22px;
+    padding-bottom: 25px;
+  }
+}
+.footer-copy-text {
+  font-family: $dm-sans;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.52;
+  color: $third-text-color;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+}
