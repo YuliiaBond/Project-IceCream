@@ -12,11 +12,10 @@
 }
 
 .text-h3 {
-  font-style: $titan, sans0-serif;
+  font-family: $titan, sans-serif;
   font-weight: 400;
   font-size: 30px;
   line-height: 1.17;
-  letter-spacing: 4%;
   color: $h3-text-color;
   text-transform: uppercase;
 
@@ -26,11 +25,11 @@
 }
 
 .text-h4 {
-  font-style: $titan, sans0-serif;
+  font-family: $titan, sans-serif;
   font-weight: 400;
   font-size: 58px;
   line-height: 1.16;
-  letter-spacing: 6%;
+  letter-spacing: 0.04em;
   color: $accent-color;
   text-transform: uppercase;
 }
@@ -78,11 +77,10 @@
   @media screen and (max-width: 767px) {
     text-align: right;
   }
-  font-style: $dm-sans, sans0-serif;
+  font-family: $dm-sans, sans-serif;
   font-weight: 700;
   font-size: 12px;
   line-height: 1.86;
-  letter-spacing: 2%;
   color: $secondary-text-color;
 }
 
@@ -99,11 +97,10 @@
 }
 
 .footer-copy-text {
-  font-style: $dm-sans, sans0-serif;
+  font-family: $dm-sans, sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.52;
-  letter-spacing: 2%;
   color: $third-text-color;
 
   @media screen and (max-width: 767px) {
