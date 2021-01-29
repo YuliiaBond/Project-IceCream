@@ -27,6 +27,8 @@
     "sass": "^1.26.9"
   },
   "dependencies": {
-    "jquery": "^3.5.1"
+    "deasync": "^0.1.21",
+    "jquery": "^3.5.1",
+    "slick-carousel": "^1.8.1"
   }
 }
