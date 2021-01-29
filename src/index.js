@@ -1,6 +1,8 @@
 import "./sass/main.scss";
 
 // СЛАЙДЕР
-$(document).ready(function () {
-    $('.slider').slick();
-});
+// $(document).ready(function(){
+//   $('.slider').slick({
+    
+//   });
+// });
