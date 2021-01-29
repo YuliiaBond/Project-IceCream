@@ -28,6 +28,7 @@
   },
   "dependencies": {
     "deasync": "^0.1.21",
-    "jquery": "^3.5.1"
+    "jquery": "^3.5.1",
+    "slick-carousel": "^1.8.1"
   }
 }
