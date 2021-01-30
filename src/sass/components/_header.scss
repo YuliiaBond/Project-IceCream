@@ -1,6 +1,8 @@
 .header {
   color: $primary-text-color;
   background-color: $bgc-hero;
+  display: flex;
+  justify-content: space-between;
 }
 
 .header-box {
@@ -9,14 +11,13 @@
   align-items: center;
   height: 50px;
 }
+
 .logo {
   position: relative;
   display: flex;
   align-items: center;
 
   padding-left: 70px;
-  // padding-top: 15px;
-  // padding-bottom: 5px;
 
   font-family: $titan;
   font-weight: 400;
@@ -152,7 +153,7 @@
   background-color: $bgc-hero;
 
   @media screen and (min-width: 768px) {
-    // height: 400px;
+    height: 400px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -167,6 +168,17 @@
   position: absolute;
   bottom: 160px;
   z-index: 3;
+  @media screen and (min-width: 768px) {
+    bottom: 173px;
+    left: 34px;
+  }
+}
+
+.main {
+  width: 218px;
+  @media screen and (min-width: 768px) {
+    width: 194px;
+  }
 }
 
 .main-title {
@@ -178,12 +190,21 @@
   text-transform: uppercase;
   max-width: 218px;
 
+  @media screen and (min-width: 768px) {
+    font-size: 22px;
+    line-height: 1.14;
+  }
+
   & span {
     font-family: $titan;
     font-size: 48px;
     line-height: 96.5%;
     text-transform: uppercase;
     color: $accent-color;
+    @media screen and (min-width: 768px) {
+      font-size: 34px;
+      line-height: 90.5%;
+    }
   }
 }
 
@@ -225,6 +246,36 @@
   @media screen and (max-width: 767px) {
     display: none;
   }
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 28px;
+}
+
+
+.milk-img {
+  width: 124px;
+  height: 126px;
+  background-image: url(../images/tablet-milk.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.milk-text {
+  position: relative;
+  font-family: $dm-sans;
+  font-size: 8px;
+  line-height: 150%;
+  
+  width: 117px;
+  
+  color: $primary-text-color;
+}
+
+.milk-link {
+  min-width: 18px;
+  min-height: 18px;
 }
 
 .hero-circle {
@@ -269,7 +320,6 @@
 
 .hero-icecream {
   position: absolute;
-  // top: 92px;
   bottom: 0;
   right: 32px;
   z-index: 2;
@@ -287,12 +337,22 @@
     width: 143px;
     height: 336px;
     right: 247px;
-    // width: 236px;
-    // height: 557px;
   }
 }
 .hero-girl {
   @media screen and (max-width: 767px) {
     display: none;
   }
+
+  position: absolute;
+  bottom: 0;
+  right: 34px;
+  z-index: 5;
+
+  width: 168px;
+  height: 133px;
+  background-image: url(../images/tablet-hero-gierl.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
