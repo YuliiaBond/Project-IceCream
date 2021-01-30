@@ -2,9 +2,8 @@
   color: $primary-text-color;
   background-color: $bgc-hero;
   @media screen and (min-width: 768px) {
-   padding-top: 38px;
+    padding-top: 38px;
   }
-  
 }
 
 .header-box {
@@ -258,9 +257,10 @@
   align-items: center;
   position: absolute;
   bottom: 28px;
+  left: 34px;
 }
 
-.milk-wrapper{
+.milk-wrapper {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -287,8 +287,60 @@
   color: $primary-text-color;
 }
 
-.milk-link{
+.milk-link {
   margin-top: 7px;
+}
+
+.hero-wrapper-numbers {
+  position: absolute;
+  right: 34px;
+}
+.numbers {
+}
+.numbers-list {
+}
+.numbers-item {
+  position: relative;
+  z-index: 2;
+
+  &:nth-last-child(1) {
+    margin-top: 13px;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 3px;
+    z-index: -4;
+
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+
+    background-color: $bg-color;
+  }
+}
+
+.numbers-num {
+  font-family: $titan;
+  font-size: 28px;
+  line-height: 1.14;
+  text-align: center;
+
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: $accent-color;
+}
+
+.numbers-text {
+  font-family: $dm-sans;
+  font-size: 8px;
+  line-height: 1.25;
+  text-align: right;
+
+  color: $primary-text-color;
 }
 
 .hero-circle {
