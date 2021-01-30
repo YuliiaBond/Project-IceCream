@@ -2,34 +2,6 @@
   color: $primary-text-color;
   background-color: $bgc-hero;
 }
-.hero-circle {
-  position: absolute;
-  z-index: 1;
-
-  border-radius: 50%;
-
-  @media screen and (max-width: 575px) {
-    right: -62px;
-    bottom: 75px;
-  }
-
-  background-color: $h3-text-color;
-  @media screen and (max-width: 767px) {
-    width: 346px;
-    height: 344px;
-  }
-}
-.container .header {
-  position: relative;
-  @media screen and (max-width: 767px) {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-.container {
-  padding-left: 20px;
-  padding-right: 20px;
-}
 
 .header-box {
   display: flex;
@@ -89,8 +61,6 @@
   &.is-open {
     display: block;
   }
-
-  
 }
 .header-wrapper-header-btn {
   font-family: $dm-sans;
@@ -137,64 +107,35 @@
   color: $primary-text-color;
 }
 
-.hero-wrapper {
-  // .hero-wrapper__title
-  // position: relative;
-  // width: 100%;
-  // height: 100%;
+// !================ hero ======================
 
-  &__title {
-    position: absolute;
-    bottom: 160px;
-    z-index: 3;
-    .list {
-      display: flex;
-      margin-top: 19px;
-    }
-    .item {
-      &:not(:nth-last-child(1)) {
-        margin-right: 8px;
-      }
-    }
-    .link {
-      font-family: $dm-sans;
-      font-size: 8px;
-      line-height: 1.25;
+.hero {
+  position: relative;
+  overflow: hidden;
 
-      padding: 7px 13px;
-      border-radius: 22px;
+  color: $primary-text-color;
+  background-color: $bgc-hero;
 
-      color: $primary-text-color;
-      background-color: $accent-color;
-    }
-
-    .link.second {
-      color: $accent-color;
-      background-color: $primary-text-color;
-    }
+  @media screen and (max-width: 575px) {
+    height: 502px;
   }
 
-  // .hero-wrapper__numbers
-
-  &__numbers {
-    @media screen and (max-width: 767px) {
-      display: none;
-    }
-  }
-
-  // .hero-wrapper__milk
-
-  &__milk {
-    @media screen and (max-width: 767px) {
-      display: none;
-    }
+  @media screen and (min-width: 1200px) {
+    height: 100vh;
   }
 }
-.hero-title {
-  // position: absolute;
-  // top: 0;
-  // left: 0;
 
+.hero-wrapper {
+
+}
+
+.hero-wrapper-title {
+  position: absolute;
+  bottom: 160px;
+  z-index: 3;
+}
+
+.main-title {
   font-family: $titan;
   font-weight: 400;
   font-size: 26px;
@@ -212,12 +153,82 @@
   }
 }
 
-// .number {
-// }
-// .text {
-// }
-// .header-milk {
-// }
+.main-list {
+  display: flex;
+  margin-top: 19px;
+}
+
+.main-item {
+  &:not(:nth-last-child(1)) {
+    margin-right: 8px;
+  }
+}
+
+.main-link {
+  font-family: $dm-sans;
+  font-size: 8px;
+  line-height: 1.25;
+
+  padding: 7px 13px;
+  border-radius: 22px;
+
+  color: $primary-text-color;
+  background-color: $accent-color;
+}
+
+.main-link.second {
+  color: $accent-color;
+  background-color: $primary-text-color;
+}
+
+.hero-wrapper-numbers {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.hero-wrapper-milk {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.hero-circle {
+  position: absolute;
+  z-index: 1;
+
+  border-radius: 50%;
+
+  @media screen and (max-width: 575px) {
+    right: -62px;
+    bottom: 75px;
+  }
+
+  background-color: $h3-text-color;
+  @media screen and (max-width: 767px) {
+    width: 346px;
+    height: 344px;
+  }
+}
+
+.hero-title {
+  font-family: $titan;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  max-width: 218px;
+
+  & span {
+    font-family: $titan;
+    font-size: 48px;
+    line-height: 96.5%;
+    text-transform: uppercase;
+    color: $accent-color;
+  }
+}
+
 .hero-icecream {
   position: absolute;
   top: 92px;
@@ -227,22 +238,5 @@
 .hero-girl {
   @media screen and (max-width: 767px) {
     display: none;
-  }
-}
-
-// ================ hero ======================
-.hero {
-  position: relative;
-  overflow: hidden;
-
-  color: $primary-text-color;
-  background-color: $bgc-hero;
-
-  @media screen and (max-width: 575px) {
-    height: 502px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    height: 100vh;
   }
 }

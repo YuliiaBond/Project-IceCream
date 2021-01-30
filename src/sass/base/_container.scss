@@ -1,26 +1,18 @@
 // Стили для контейнера
 .container {
-  // width: 1200px;
+  // MOBILE
   padding-right: 20px;
   padding-left: 20px;
   margin-right: auto;
   margin-left: auto;
-
   // outline: 3px solid red;
 
-  // MOBILE
-
-  @media screen and (min-width: 320px) {
-    width: 320px;
-    // padding-top: 125px;
-    // padding-bottom: 98px;
-  }
 
   // TABLET
   @media screen and (min-width: 768px) {
     width: 768px;
-    padding-right: 36px;
-    padding-left: 36px;
+    padding-right: 34px;
+    padding-left: 34px;
   }
 
   // DESCKTOP
