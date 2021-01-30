@@ -1,17 +1,6 @@
 .header {
-  position: relative;
-  overflow: hidden;
-
   color: $primary-text-color;
   background-color: $bgc-hero;
-
-  @media screen and (max-width: 575px) {
-    height: 502px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    height: 100vh;
-  }
 }
 .header-circle {
   position: absolute;
@@ -237,5 +226,22 @@
 .header-girl {
   @media screen and (max-width: 767px) {
     display: none;
+  }
+}
+
+// ================ hero ======================
+.hero {
+  position: relative;
+  overflow: hidden;
+
+  color: $primary-text-color;
+  background-color: $bgc-hero;
+
+  @media screen and (max-width: 575px) {
+    height: 502px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    height: 100vh;
   }
 }
