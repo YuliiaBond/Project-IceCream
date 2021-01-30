@@ -9,6 +9,36 @@
   align-items: center;
 }
 .logo {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  // margin-left: 20px;
+
+  font-family: $titan;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: $accent-color;
+
+  // &::before{
+  //   content:'';
+  //   width: 50px;
+  //   height: 50px;
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   background-image: url(../../images/logo.png)0 0 no-repeat;
+  // }
+  span {
+    position: absolute;
+    top: 10px;
+    left: 70px;
+  }
+
   @media screen and (max-width: 575px) {
     margin-top: 6px;
   }
@@ -19,6 +49,7 @@
   padding: 0;
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .header-btn-burger .icon-cross {
@@ -41,7 +72,11 @@
 .header-icon {
   width: 20px;
   height: 14px;
-  fill: currentColor;
+
+  &:hover,
+  &:focus {
+    --color1: #fff;
+  }
 }
 
 .header-wrapper {
@@ -126,7 +161,6 @@
 }
 
 .hero-wrapper {
-
 }
 
 .hero-wrapper-title {
