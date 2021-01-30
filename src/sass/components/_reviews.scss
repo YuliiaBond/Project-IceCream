@@ -1,58 +1,163 @@
 .reviews {
-  padding-top: 123px;
-  padding-bottom: 234px;
+  padding-top: 80px;
+  padding-bottom: 170px;
   text-align: center;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 119px;
+    padding-bottom: 197px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 123px;
+    padding-bottom: 234px;
+  }
 }
-// .inactive {
-//   display: none;
-// }
+.swiper-wraper {
+  // display: inline-block;
+  height: 0px;
+  width: 620px;
+  justify-content: center;
+}
+.container-reviews {
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  // outline: solid 3px red;
+
+  // TABLET
+  @media screen and (min-width: 768px) {
+    padding-right: 36px;
+    padding-left: 36px;
+  }
+
+  // DESCKTOP
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    padding-right: 115px;
+    padding-left: 115px;
+  }
+}
 .swiper-slide {
-  display: inline-block;
-  width: 280px;
+  display: block;
+  max-width: 280px;
+  // max-width: 100%;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width: 320px) {
+    max-width: 620px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 35px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 926px;
+  }
 }
 .reviewers-photo {
   margin-bottom: 29px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 19px;
+  }
 }
 .comment-box {
+  display: inline-block;
   background-color: $bgc-reviews;
   position: relative;
-  padding: 43px 50px 20px 50px;
-  height: 308px;
-  // width: 280px;
-  margin-bottom: 30px;
+  max-width: 926px;
+  padding: 41px 50px 20px 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 28px;
+  z-index: 0;
+
+  @media screen and (min-width: 768px) {
+    padding: 47px 38px 28px 38px;
+    margin-bottom: 24px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 47px 52px;
+    margin-bottom: 15px;
+  }
+}
+.quotes {
+  position: absolute;
+  top: 26px;
+  left: 63px;
+  z-index: -1;
+
+  @media screen and (min-width: 768px) {
+    top: 30px;
+    left: 40px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    top: 32px;
+    left: 50px;
+  }
 }
 .comment {
   display: block;
-  position: absolute;
-  width: 180px;
+  position: static;
+  padding-left: 10px;
+  padding-right: 10px;
   color: $secondary-text-color;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
-  line-height: 255%;
-  // line-height: 2.58;
-  margin-left: auto;
-  margin-right: auto;
+  line-height: 31px;
   letter-spacing: 0.04em;
-  z-index: 10;
+  z-index: 1;
+
+  background: repeating-linear-gradient(
+    to bottom,
+    $comment-line-color 0px,
+    transparent 1px,
+    transparent 30px,
+    $comment-line-color 30px,
+    $comment-line-color 31px
+  );
+  background-position: center bottom 3px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+  }
 }
 .reviewers-info {
   color: $secondary-text-color;
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 14px;
   line-height: 1.85;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 20px;
+  }
 }
-.quotes {
-  position: absolute;
-  top: 28px;
-  left: 61px;
-  z-index: 1;
-}
+
 .dots-list {
   display: flex;
   justify-content: center;
   margin-bottom: 18px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 14px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 15px;
+  }
 }
 .dots-item {
   display: block;

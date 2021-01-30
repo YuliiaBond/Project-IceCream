@@ -30,16 +30,16 @@ footer {
   }
 }
 
-.text-h2 {
-  @media screen and (min-width: 1200px) {
-    display: flex;
-  }
-}
-.text-h3 {
-  @media screen and (min-width: 1200px) {
-    display: flex;
-  }
-}
+// .text-h2 {
+//   @media screen and (min-width: 1200px) {
+//     display: flex;
+//   }
+// }
+// .text-h3 {
+//   @media screen and (min-width: 1200px) {
+//     display: flex;
+//   }
+// }
 
 .text-h2 {
   font-family: $titan;
@@ -52,7 +52,7 @@ footer {
 
   @media screen and (max-width: 767px) {
     margin-bottom: 17px;
-    max-width: 232px;
+    padding-right: 40px;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -82,7 +82,7 @@ footer {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: $accent-color;
-  // padding-right: 80px;
+  padding-right: 80px;
 
   @media screen and (max-width: 767px) {
     margin-bottom: 17px;
