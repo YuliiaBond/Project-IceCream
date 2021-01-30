@@ -1,80 +1,57 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>making</title>
-  </head>
-  <body>
-    <section>
-      <div class="section-making">
-        <div class="container">
-          <h2 class="making-title">
-            tradition and love
-            <span class="making-subtitle">how it’ made?</span>
-          </h2>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>making</title>
+</head>
+
+<body>
+  <section>
+    <div class="section-making">
+      <div class="container">
+        <h2 class="making-title">
+          tradition and love
+          <span class="making-subtitle">how it’ made?</span>
+        </h2>
+        <div class="making-basis">
           <picture>
-            <source
-              media="(min-width: 1200px)"
-              srcset="
-                ./images/desktop/webp/Cow1200.webp 1x,
-                ./images/desktop/webp/Cow1200.webp 2x,
-                ./images/desktop/webp/Cow1200.webp 3x
-              "
-              type="image/webp"
-            />
-            <source
-              media="(min-width: 768px)"
-              srcset="
-                ./images/tablet/webp/Cow768.webp    1x,
-                ./images/tablet/webp/Cow768@2x.webp 2x,
-                ./images/tablet/webp/Cow768@3x.webp 3x
-              "
-              type="image/webp"
-            />
-            <source
-              media="(max-width: 767px)"
-              srcset="
-                ./images/mobile/webp/Cow320.webp    1x,
-                ./images/mobile/webp/Cow320@2x.webp 2x,
-                ./images/mobile/webp/Cow320@3x.webp 3x
-              "
-              type="image/webp"
-            />
-            <source
-              media="(min-width: 1200px)"
-              srcset="
-                ./images/desktop/Cow1200.jpg    1x,
-                ./images/desktop/Cow1200@2x.jpg 2x,
-                ./images/desktop/Cow1200@3x.jpg 3x
-              "
-            />
-            <source
-              media="(min-width: 768px)"
-              srcset="
-                ./images/tablet/Cow768.jpg    1x,
-                ./images/tablet/Cow768@2x.jpg 2x,
-                ./images/tablet/Cow768@3x.jpg 3x
-              "
-            />
-            <source
-              media="(max-width: 767px)"
-              srcset="
-                ./images/mobile/Cow320.jpg    1x,
-                ./images/mobile/Cow320@2x.jpg 2x,
-                ./images/mobile/Cow320@3x.jpg 3x
-              "
-            />
-            <img
-              srcset="
-                ./images/mobile/Cow320.jpg    1x,
-                ./images/mobile/Cow320@2x.jpg 2x,
-                ./images/mobile/Cow320@3x.jpg 3x
-              "
-              src="./images/mobile/Cow320.jpg"
-              alt="Cow"
-              loading="lazy"
-            />
+            <source media="(min-width: 1200px)" srcset="
+                                  ./images/desktop/webp/Cow1200.webp 1x,
+                                  ./images/desktop/webp/Cow1200.webp 2x,
+                                  ./images/desktop/webp/Cow1200.webp 3x
+                                " type="image/webp" />
+            <source media="(min-width: 768px)" srcset="
+                                  ./images/tablet/webp/Cow768.webp    1x,
+                                  ./images/tablet/webp/Cow768@2x.webp 2x,
+                                  ./images/tablet/webp/Cow768@3x.webp 3x
+                                " type="image/webp" />
+            <source media="(max-width: 767px)" srcset="
+                                  ./images/mobile/webp/Cow320.webp    1x,
+                                  ./images/mobile/webp/Cow320@2x.webp 2x,
+                                  ./images/mobile/webp/Cow320@3x.webp 3x
+                                " type="image/webp" />
+            <source media="(min-width: 1200px)" srcset="
+                                  ./images/desktop/Cow1200.png    1x,
+                                  ./images/desktop/Cow1200@2x.png 2x,
+                                  ./images/desktop/Cow1200@3x.png 3x
+                                " />
+            <source media="(min-width: 768px)" srcset="
+                                  ./images/tablet/Cow768.png    1x,
+                                  ./images/tablet/Cow768@2x.png 2x,
+                                  ./images/tablet/Cow768@3x.png 3x
+                                " />
+            <source media="(max-width: 767px)" srcset="
+                                  ./images/mobile/Cow320.png    1x,
+                                  ./images/mobile/Cow320@2x.png 2x,
+                                  ./images/mobile/Cow320@3x.png 3x
+                                " />
+            <img class="foto-crow" srcset="
+                                  ./images/mobile/Cow320.png    1x,
+                                  ./images/mobile/Cow320@2x.png 2x,
+                                  ./images/mobile/Cow320@3x.png 3x
+                                " src="./images/mobile/Cow320.png" alt="Cow" loading="lazy" />
           </picture>
           <p class="making-description">
             Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel
@@ -91,10 +68,12 @@
           <div class="making-btn-style">
             <button type="button" class="making-btn btn">Read more</button>
           </div>
-          <ul class="making-list list">
-            <li class="making-item item">
-              <div class="making-style">
-                <!-- <picture>
+        </div>
+
+        <ul class="making-list list">
+          <li class="making-item item">
+            <div class="making-style">
+              <!-- <picture>
                   <source
                     srcset="
                       ./images/mobile/making-cow.jpg    1x,
@@ -113,52 +92,35 @@
                     loading="lazy"
                   />
                 </picture> -->
-                <img
-                  class="making-cow"
-                  width="33"
-                  height="50"
-                  src="./images/making-cow.png"
-                  alt="making-cow"
-                />
-                <h3 class="making-massa">721</h3>
-                <p class="making-circle">
-                  Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
-                </p>
-              </div>
-            </li>
-            <li class="making-item item">
-              <div class="making-style">
-                <img
-                  class="making-food"
-                  width="50"
-                  height="50"
-                  src="./images/making-food.png"
-                  alt="making-food"
-                />
-                <h3 class="making-massa">16KG</h3>
-                <p class="making-circle">
-                  Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
-                </p>
-              </div>
-            </li>
-            <li class="making-item item">
-              <div class="making-style">
-                <img
-                  class="making-health"
-                  width="44"
-                  height="50"
-                  src="./images/making-health.png"
-                  alt="making-health"
-                />
-                <h3 class="making-massa">84</h3>
-                <p class="making-circle">
-                  Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
-                </p>
-              </div>
-            </li>
-          </ul>
-        </div>
+              <img class="making-cow" width="33" height="50" src="./images/making-cow.png" alt="making-cow" />
+              <h3 class="making-massa">721</h3>
+              <p class="making-circle">
+                Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+              </p>
+            </div>
+          </li>
+          <li class="making-item item">
+            <div class="making-style">
+              <img class="making-food" width="50" height="50" src="./images/making-food.png" alt="making-food" />
+              <h3 class="making-massa">16KG</h3>
+              <p class="making-circle">
+                Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+              </p>
+            </div>
+          </li>
+          <li class="making-item item">
+            <div class="making-style">
+              <img class="making-health" width="44" height="50" src="./images/making-health.png" alt="making-health" />
+              <h3 class="making-massa">84</h3>
+              <p class="making-circle">
+                Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+              </p>
+            </div>
+          </li>
+        </ul>
       </div>
-    </section>
-  </body>
+    </div>
+  </section>
+</body>
+
 </html>
