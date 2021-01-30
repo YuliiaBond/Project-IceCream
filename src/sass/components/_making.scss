@@ -15,22 +15,7 @@ img {
   max-width: 100%;
   height: auto;
 }
-.container {
-  padding-right: 20px;
-  padding-left: 20px;
-  margin-right: auto;
-  margin-left: auto;
 
-  @media screen and (min-width: 320px) {
-    width: 320px;
-  }
-  @media screen and (min-width: 768px) {
-    width: 768px;
-  }
-  @media screen and (min-width: 1200px) {
-    width: 1200px;
-  }
-}
 .section-making {
   background-color: $secondary-bg-color;
   padding-top: 125px;
@@ -129,16 +114,16 @@ img {
   justify-content: center;
 }
 
-.making-btn::after  {
-    display: flex;
-      content: "";
-      background-image: url(../images/btn-icon.png);
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
+.making-btn::after {
+  display: flex;
+  content: '';
+  background-image: url(../images/btn-icon.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   margin-left: 14px;
-    width: 5px;
-    height: 8px;
+  width: 5px;
+  height: 8px;
 }
 .making-list {
   padding-right: 70px;
