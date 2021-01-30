@@ -13,11 +13,15 @@
     padding-bottom: 234px;
   }
 }
+.swiper-container {
+  // display: flex;
+}
 .swiper-wraper {
   // display: inline-block;
   height: 0px;
-  width: 620px;
-  justify-content: center;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 .container-reviews {
   padding-right: 20px;

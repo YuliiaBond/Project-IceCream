@@ -1,7 +1,9 @@
 new Swiper('.swiper-container', {
     spaceBetween: 100,
-    effect: 'fade',
+    // effect: 'fade',
     slidesPerView: 'auto',
+    centeredSlides: true,
+    loop: true,
     pagination: {
         clickable: true,
         el: '.swiper-pagination',
