@@ -1,8 +1,10 @@
 .header {
   color: $primary-text-color;
   background-color: $bgc-hero;
-  display: flex;
-  justify-content: space-between;
+  @media screen and (min-width: 768px) {
+   padding-top: 38px;
+  }
+  
 }
 
 .header-box {
@@ -50,7 +52,13 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
+  margin-left: 291px;
 }
+// .header-btn-burger.tablet{
+//   position: absolute;
+//   right: 0;
+//   top: 0;
+// }
 
 .header-btn-burger .icon-cross {
   display: none;
@@ -252,6 +260,12 @@
   bottom: 28px;
 }
 
+.milk-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 27px;
+}
 
 .milk-img {
   width: 124px;
@@ -267,15 +281,14 @@
   font-family: $dm-sans;
   font-size: 8px;
   line-height: 150%;
-  
-  width: 117px;
-  
+
+  width: 157px;
+
   color: $primary-text-color;
 }
 
-.milk-link {
-  min-width: 18px;
-  min-height: 18px;
+.milk-link{
+  margin-top: 7px;
 }
 
 .hero-circle {
