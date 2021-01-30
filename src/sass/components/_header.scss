@@ -2,7 +2,7 @@
   color: $primary-text-color;
   background-color: $bgc-hero;
 }
-.header-circle {
+.hero-circle {
   position: absolute;
   z-index: 1;
 
@@ -136,8 +136,8 @@
   }
 }
 
-.header-wrapper {
-  // .header-wrapper__title
+.hero-wrapper {
+  // .hero-wrapper__title
   // position: relative;
   // width: 100%;
   // height: 100%;
@@ -173,7 +173,7 @@
     }
   }
 
-  // .header-wrapper__numbers
+  // .hero-wrapper__numbers
 
   &__numbers {
     @media screen and (max-width: 767px) {
@@ -181,7 +181,7 @@
     }
   }
 
-  // .header-wrapper__milk
+  // .hero-wrapper__milk
 
   &__milk {
     @media screen and (max-width: 767px) {
@@ -189,7 +189,7 @@
     }
   }
 }
-.header-title {
+.hero-title {
   // position: absolute;
   // top: 0;
   // left: 0;
@@ -217,13 +217,13 @@
 // }
 // .header-milk {
 // }
-.header-icecream {
+.hero-icecream {
   position: absolute;
   top: 92px;
   right: 32px;
   z-index: 2;
 }
-.header-girl {
+.hero-girl {
   @media screen and (max-width: 767px) {
     display: none;
   }
