@@ -1,5 +1,4 @@
 .location {
-  position: relative;
   background-color: $secondary-bg-color;
   font-weight: 500;
   font-style: normal;
@@ -7,10 +6,16 @@
   letter-spacing: 0.03em;
   line-height: 1.5;
   font-family: $dm-sans;
+  margin-bottom: -83px;
+  .location-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
   .location-content {
-    width: 100%;
-    // position: absolute;
+    position: relative;
     top: -83px;
+    width: 100%;
   }
 }
 .location-list-item {
@@ -81,6 +86,7 @@
   background-color: $cafe-color;
 }
 .location-nav-list {
+  text-align: center;
   font-size: 16px;
 
   .location-nav-item a {
@@ -91,7 +97,8 @@
     min-width: 161px;
     text-align: center;
     border-radius: 22px;
-    padding: 14px 0;
+    padding: 14px 17px;
+    position: relative;
   }
   .location-nav-item:first-child a {
     background-color: $btn-color;
@@ -100,14 +107,6 @@
   }
   .location-nav-item:last-child a {
     background-color: $primary-text-color;
-    margin-bottom: 113px;
     color: $btn-color;
-  }
-  .location-sign {
-    width: 3.6px;
-    height: 8px;
-  }
-  .location-sign-red {
-    --color1: $btn-color;
   }
 }
