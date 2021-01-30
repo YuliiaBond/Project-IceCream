@@ -99,14 +99,39 @@
     border-radius: 22px;
     padding: 14px 17px;
     position: relative;
+    transition: color 250ms $timing-function;
   }
   .location-nav-item:first-child a {
     background-color: $btn-color;
     margin-bottom: 10px;
     color: $primary-text-color;
+    &:hover {
+      background-color: $primary-text-color;
+      color: $btn-color;
+    }
+    &:hover .arrow-white {
+      stroke: $btn-color;
+      --color1: $btn-color;
+    }
   }
   .location-nav-item:last-child a {
     background-color: $primary-text-color;
     color: $btn-color;
+    &:hover {
+      background-color: $btn-color;
+      color: $primary-text-color;
+    }
+    &:hover .arrow-red {
+      stroke: $primary-text-color;
+      --color1: $primary-text-color;
+    }
+  }
+  .location-arrow {
+    width: 4.3px;
+    height: 8px;
+  }
+  .arrow-red {
+    stroke: $btn-color;
+    --color1: $btn-color;
   }
 }
