@@ -112,7 +112,7 @@
       width: 186px;
     }
 
-    padding: 11px 30px;
+    padding: 11px 47px;
     border-radius: 22px;
     color: $accent-color;
     background-color: $primary-text-color;
@@ -123,6 +123,9 @@
     text-align: left;
   }
   .item {
+    display: block;
+    padding-top: 13px;
+    padding-bottom: 11px;
     border-bottom: 1px solid $border-color;
     &:first-child {
       border-top: 1px solid $border-color;
@@ -139,8 +142,6 @@
     @media screen and (min-width: 576px) {
       margin-left: 24px;
     }
-
-    padding: 11px;
 
     color: $primary-text-color;
   }
@@ -205,6 +206,7 @@
   // left: 0;
 
   font-family: $titan;
+  font-weight: 400;
   font-size: 26px;
   line-height: 1.15;
   letter-spacing: 0.04em;

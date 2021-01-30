@@ -37,6 +37,8 @@
     margin-bottom: 25px;
   }
   .location-city {
+    color: $secondary-text-color;
+    font-weight: 700;
     line-height: 1.8;
     letter-spacing: 0.04em;
     margin-bottom: 10px;
@@ -49,6 +51,7 @@
 
   .location-date {
     color: $secondary-text-color;
+    font-weight: 700;
     line-height: 1.8;
   }
   .location-time {
@@ -90,6 +93,8 @@
 .location-nav-list {
   text-align: center;
   font-size: 16px;
+  font-family: $dm-sans;
+  font-weight: 700;
 
   .location-nav-item a {
     display: inline-block;
