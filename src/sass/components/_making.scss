@@ -1,13 +1,12 @@
+.container {
+  @media screen and (min-width: 768px) {
+    flex-direction: column;
+  }
+}
 .section-making {
   background-color: $secondary-bg-color;
   padding-top: 125px;
-  padding-right: auto;
   padding-bottom: 145px;
-  padding-left: auto;
-  @media screen and (max-width: 767px) {
-    padding-top: 125px;
-    padding-bottom: 145px;
-  }
   @media screen and (min-width: 768px) {
     padding-top: 130px;
     padding-bottom: 246px;
@@ -17,7 +16,6 @@
     padding-bottom: 310px;
   }
 }
-
 .making-title {
   margin-top: 0px;
   margin-bottom: 26px;
@@ -29,6 +27,10 @@
   font-size: 18px;
   line-height: 1.17;
   color: $h3-text-color;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-bottom: 50px;
+  }
 }
 .making-subtitle {
   margin-top: 15px;
@@ -43,6 +45,25 @@
   text-align: center;
   text-transform: uppercase;
   color: $accent-color;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+.making-basis {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-bottom: 66px;
+  }
+}
+.foto-crow {
+  @media screen and (min-width: 768px) {
+    max-width: 340px;
+    display: flex;
+    justify-content: center;
+  }
+  @media screen and (min-width: 1200px) {
+    min-width: 516px;
+  }
 }
 .making-description {
   padding-right: 30px;
@@ -55,6 +76,11 @@
   font-size: 12px;
   line-height: 1.58;
   color: $secondary-text-color;
+  @media screen and (min-width: 768px) {
+    margin-top: 100px;
+    margin-bottom: 49px;
+    margin-left: 17px;
+  }
 }
 .making-promotion {
   padding-right: 30px;
@@ -67,6 +93,9 @@
   font-size: 12px;
   line-height: 1.58;
   color: $third-text-color;
+  @media screen and (min-width: 768px) {
+    margin-left: 17px;
+  }
 }
 .making-btn {
   padding: 0;
@@ -94,6 +123,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 66px;
+  }
 }
 
 .making-btn::after {
@@ -106,6 +138,11 @@
   margin-left: 14px;
   width: 5px;
   height: 8px;
+}
+.making-list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 .making-massa {
   min-height: 54px;
@@ -142,6 +179,9 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: none;
+  }
 }
 
 @media screen and (min-device-pixel-ratio: 2),
