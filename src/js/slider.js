@@ -9,10 +9,10 @@ new Swiper('.swiper-container', {
         el: '.swiper-pagination',
     },
 
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev'
-    },
+    // navigation: {
+    //     nextEl: '.swiper-button-next',
+    //     prevEl: '.swiper-button-prev'
+    // },
 
     scrollbar: {
       el: '.swiper-scrollbar',
