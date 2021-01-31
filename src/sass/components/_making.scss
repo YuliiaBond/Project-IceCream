@@ -1,5 +1,6 @@
 .container {
   // background-color: $secondary-bg-color;
+
   @media screen and (min-width: 768px) {
     flex-direction: column;
     padding-left: 36px;
@@ -43,6 +44,7 @@
   font-size: 18px;
   line-height: 1.17;
   color: $h3-text-color;
+
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     font-size: 26px;
     line-height: 1.15;
@@ -55,7 +57,6 @@
 }
 .making-subtitle {
   margin-top: 15px;
-  margin-bottom: 26px;
   display: block;
   font-family: 'Titan One';
   font-size: 34px;
@@ -100,11 +101,22 @@
     justify-content: center;
   }
 }
+
 .making-text {
   display: flex;
   flex-direction: column;
   padding-left: 0;
   padding-right: 0;
+
+// .making-basic-column {
+//   display: flex;
+//   flex-direction: column;
+//   margin-left: 17px;
+// }
+.making-description {
+//   padding-right: 30px;
+//   padding-left: 30px;
+
   margin-top: 46px;
 
   font-family: 'DM Sans';
@@ -113,7 +125,11 @@
   font-size: 12px;
   line-height: 1.58;
   color: $secondary-text-color;
+
   @media screen and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 14px;
+    line-height: 1.79;
+
     display: flex;
     flex-wrap: wrap;
   }
@@ -159,6 +175,8 @@
     font-size: 14px;
     letter-spacing: 0.04em;
     margin-bottom: 62px;
+    line-height: 1.79;
+
   }
   @media screen and (min-width: 1200px) {
     font-size: 14px;
@@ -209,7 +227,6 @@
     margin-left: 0;
   }
 }
-
 .making-btn::after {
   display: flex;
   content: '';
@@ -218,8 +235,10 @@
   background-repeat: no-repeat;
   background-position: center;
   margin-left: 14px;
-  width: 5px;
-  height: 8px;
+  position: relative;
+  top: 1.5px;
+  width: 6px;
+  height: 7.9px;
 }
 .making-list {
   @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -292,40 +311,52 @@
 .making-item img:not(:last-child) {
   margin-bottom: 16px;
 }
+
 .making-item img {
   display: inline-block;
+  margin-bottom: 16px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 36px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .making-item:not(:last-child) {
+    margin-bottom: 38px;
+  }
+}
+.making-list .making-item {
+  @media screen and (min-width: 768px) {
+    max-width: 180px;
+  }
 }
 .overlay {
   margin-left: auto;
   margin-right: auto;
   max-width: 1600px;
-  background-image: url(../images/mobile/Cowbg320.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom;
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    display: none;
+  @media screen and (max-width: 767px) {
+    background-image: url(../images/mobile/Cowbg320.png);
   }
-}
-
-@media screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
-  .overlay {
-    background-image: url(../images/mobile/Cowbg320@2x.png);
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .overlay {
+      background-image: url(../images/mobile/Cowbg320@2x.png);
+    }
   }
-}
-@media screen and (min-device-pixel-ratio: 3),
-  screen and (min-resolution: 288dpi),
-  screen and (min-resolution: 3dppx) {
-  .overlay {
-    background-image: url(../images/mobile/Cowbg320@3x.png);
+  @media screen and (min-device-pixel-ratio: 3),
+    screen and (min-resolution: 288dpi),
+    screen and (min-resolution: 3dppx) {
+    .overlay {
+      background-image: url(../images/mobile/Cowbg320@3x.png);
+    }
   }
-}
-
-@media screen and (min-width: 1200px) {
-  .overlay {
-    background-image: url(../images/desktop/Cowbg1200.png);
+  @media screen and (min-width: 1200px) {
+    .overlay {
+      background-image: url(../images/desktop/Cowbg1200.png);
+    }
   }
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
