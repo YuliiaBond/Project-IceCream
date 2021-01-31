@@ -17,4 +17,14 @@ new Swiper('.swiper-container', {
     scrollbar: {
       el: '.swiper-scrollbar',
     },
+
+    // ДОСТУПНОСТЬ
+    a11y: {
+        enabled: true,
+
+        prevSlideMessage: 'Previous slide',
+        nextSlideMessage: 'Next slide',
+        firstSlideMessage: 'This is the first slide',
+        lastSlideMessage: 'This is the last slide',
+    }
 });
