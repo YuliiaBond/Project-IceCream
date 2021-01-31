@@ -1,5 +1,5 @@
 new Swiper('.swiper-container', {
-    spaceBetween: 100,
+    spaceBetween: 300,
     // effect: 'fade',
     slidesPerView: 'auto',
     centeredSlides: true,
