@@ -1,23 +1,19 @@
 .reviews {
-  padding-top: 80px;
+  padding-top: 154px;
   padding-bottom: 170px;
   text-align: center;
 
   @media screen and (min-width: 768px) {
-    padding-top: 119px;
+    padding-top: 279px;
     padding-bottom: 197px;
   }
 
   @media screen and (min-width: 1200px) {
-    padding-top: 123px;
+    padding-top: 382px;
     padding-bottom: 234px;
   }
 }
-.swiper-container {
-  // display: flex;
-}
 .swiper-wraper {
-  // display: inline-block;
   height: 0px;
   width: auto;
   margin-left: auto;
@@ -29,7 +25,6 @@
   margin-right: auto;
   margin-left: auto;
   width: 100%;
-  // outline: solid 3px red;
 
   // TABLET
   @media screen and (min-width: 768px) {
@@ -47,7 +42,6 @@
 .swiper-slide {
   display: block;
   max-width: 280px;
-  // max-width: 100%;
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
