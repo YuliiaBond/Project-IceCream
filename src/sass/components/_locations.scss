@@ -6,7 +6,7 @@
   letter-spacing: 0.03em;
   line-height: 1.5;
   font-family: $dm-sans;
-  margin-bottom: -83px;
+
   .location-list {
     display: flex;
     flex-direction: column;
@@ -15,7 +15,23 @@
   .location-content {
     position: relative;
     top: -83px;
-    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .location {
+    top: -78px;
+    .location-list {
+      flex-direction: row;
+      margin-bottom: 81px;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .location {
+    top: -103px;
+    .location-list {
+      margin-bottom: 86px;
+    }
   }
 }
 .location-list-item {
@@ -37,8 +53,6 @@
     margin-bottom: 25px;
   }
   .location-city {
-    color: $secondary-text-color;
-    font-weight: 700;
     line-height: 1.8;
     letter-spacing: 0.04em;
     margin-bottom: 10px;
@@ -51,7 +65,6 @@
 
   .location-date {
     color: $secondary-text-color;
-    font-weight: 700;
     line-height: 1.8;
   }
   .location-time {
@@ -77,8 +90,46 @@
     color: $third-text-color;
   }
 }
-.location-list-item:last-child {
-  margin-bottom: 54px;
+@media screen and (min-width: 768px) {
+  .location {
+    font-size: 14px;
+    .location-list {
+      margin: 0 auto;
+    }
+    .location-list-item {
+      padding: 50px 31px;
+      min-width: 220px;
+      &:not(:last-child) {
+        margin-bottom: 0;
+        margin-right: 20px;
+      }
+    }
+    .location-list-item:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .location {
+    font-size: 16px;
+    background-image: url('../img/location/sectionbg2\ 1background-location.png');
+    background-position: top center;
+    background-repeat: no-repeat;
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (-o-min-device-pixel-ratio: 2/1),
+      screen and (-webkit-min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../img/location/sectionbg2\ 1@2x.png');
+    }
+    .location-list-item {
+      padding: 51px 43px;
+      min-width: 330px;
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
+  }
 }
 .location-list-item:not(:last-child) {
   margin-bottom: 10px;
@@ -93,11 +144,14 @@
 .location-nav-list {
   text-align: center;
   font-size: 16px;
-  font-family: $dm-sans;
-  font-weight: 700;
+  .location-nav-item {
+    display: block;
+    max-width: 161.45px;
+    margin: 0 auto;
+  }
 
   .location-nav-item a {
-    display: inline-block;
+    display: block;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
@@ -112,11 +166,13 @@
     background-color: $btn-color;
     margin-bottom: 10px;
     color: $primary-text-color;
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: $primary-text-color;
       color: $btn-color;
     }
-    &:hover .arrow-white {
+    &:hover,
+    &:focus .arrow-white {
       stroke: $btn-color;
       --color1: $btn-color;
     }
@@ -124,7 +180,8 @@
   .location-nav-item:last-child a {
     background-color: $primary-text-color;
     color: $btn-color;
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: $btn-color;
       color: $primary-text-color;
     }
@@ -136,9 +193,40 @@
   .location-arrow {
     width: 4.3px;
     height: 8px;
+    transition: color 250ms $timing-function;
   }
   .arrow-red {
     stroke: $btn-color;
     --color1: $btn-color;
+  }
+}
+@media screen and (min-width: 768px) {
+  .location-nav-list {
+    display: flex;
+    padding-bottom: 158px;
+    justify-content: center;
+    .location-nav-item {
+      min-width: 198px;
+      margin: 0;
+      &:first-child {
+        margin-right: 14.5px;
+      }
+    }
+    .location-nav-item a {
+      width: 100%;
+      display: inline-block;
+      padding: 14px 36px;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .location-nav-list {
+    padding-bottom: 165px;
+    .location-nav-item {
+      min-width: 198px;
+      &:first-child {
+        margin-right: 15px;
+      }
+    }
   }
 }
