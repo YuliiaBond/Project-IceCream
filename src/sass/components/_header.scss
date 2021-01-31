@@ -6,10 +6,19 @@
   }
 }
 
+.container-header {
+  padding-left: 20px;
+  padding-right: 20px;
+  @media screen and (min-width: 768px) {
+    padding-right: 34px;
+    padding-left: 34px;
+  }
+}
+
 .header-box {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   height: 50px;
 }
 
@@ -51,13 +60,12 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
-  margin-left: 291px;
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    z-index: 7;
+    right: 251px;
+  }
 }
-// .header-btn-burger.tablet{
-//   position: absolute;
-//   right: 0;
-//   top: 0;
-// }
 
 .header-btn-burger .icon-cross {
   display: none;
@@ -65,6 +73,11 @@
 
 .header-btn-burger.is-open .icon-cross {
   display: block;
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: 0;
+    right: 50px;
+  }
 }
 
 .header-btn-burger.is-open .icon-menu {
@@ -74,6 +87,13 @@
 .header-btn-burger.is-open .header-icon {
   position: relative;
   z-index: 10;
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    z-index: 10;
+    top: -39px;
+    right: -217px;
+  }
 }
 
 .header-icon {
@@ -90,15 +110,19 @@
   display: none;
   position: absolute;
   top: 0;
-  left: 0;
   right: 0;
-  z-index: 5;
+  z-index: 6;
 
+  width: 100%;
   height: auto;
   padding: 60px 0px;
   text-align: center;
 
   background-color: $bgc-menu;
+
+  @media screen and (min-width: 768px) {
+    width: 275px;
+  }
 
   &.is-open {
     display: block;
@@ -111,14 +135,23 @@
   line-height: 1.3;
   text-align: center;
   width: 209px;
-  @media screen and (min-width: 576px) {
-    width: 186px;
-  }
 
   padding: 11px 47px;
   border-radius: 22px;
   color: $accent-color;
   background-color: $primary-text-color;
+}
+
+.header-wrapper-header-btn.tablet {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  position: absolute;
+  top: 43px;
+  right: 34px;
+  z-index: 5;
+  width: 186px;
 }
 
 .header-wrapper-list {
@@ -155,7 +188,7 @@
   position: relative;
   overflow: hidden;
 
-  height: 446px;
+  height: 502px;
   color: $primary-text-color;
   background-color: $bgc-hero;
 
