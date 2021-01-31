@@ -13,11 +13,15 @@
     padding-bottom: 234px;
   }
 }
+.swiper-container {
+  // display: flex;
+}
 .swiper-wraper {
   // display: inline-block;
   height: 0px;
-  width: 620px;
-  justify-content: center;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 .container-reviews {
   padding-right: 20px;
@@ -65,7 +69,7 @@
   }
 }
 .comment-box {
-  display: inline-block;
+  display: block;
   background-color: $bgc-reviews;
   position: relative;
   max-width: 926px;
@@ -164,7 +168,7 @@
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background-color: #c7133e;
+  background-color: $slider-dots;
 
   &:not(:last-child) {
     margin-right: 10px;
@@ -173,4 +177,32 @@
 
 .swiper-pagination {
   position: static;
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  margin: 0px;
+  opacity: 1;
+
+  background-color: #d9d9d9;
+  &:not(:last-child) {
+    margin-right: 18px;
+  }
+}
+.swiper-pagination-bullet-active {
+  background-color: #ffffff;
+
+  &:before {
+    display: block;
+    content: '';
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-image: url('../img/home.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: transparent;
+  }
 }
