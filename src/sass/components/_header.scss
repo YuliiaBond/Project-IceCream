@@ -197,12 +197,17 @@
   }
 
   @media screen and (min-width: 1200px) {
-    height: 100vh;
+    height: 665px;
   }
 }
 
-.hero-wrapper {
-}
+// .hero-wrapper {
+//   position: absolute;
+//   width: 700px;
+//   height: 400px;
+//   top: 50%;
+//   transform: translateY(-50%);
+// }
 
 .hero-wrapper-title {
   position: absolute;
@@ -327,11 +332,9 @@
 .hero-wrapper-numbers {
   position: absolute;
   right: 34px;
+  top: 157px;
 }
-.numbers {
-}
-.numbers-list {
-}
+
 .numbers-item {
   position: relative;
   z-index: 2;
