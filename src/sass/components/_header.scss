@@ -1,8 +1,33 @@
 .header {
+  position: absolute;
+  z-index: 15;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+
   color: $primary-text-color;
-  background-color: $bgc-hero;
+  background-color: transparent;
+
+  @media screen and (min-width:480px){
+    width: 480px;
+  }
+
+  @media screen and (min-width:768px){
+    width: 768px;
+  }
+
+  @media screen and (min-width:1200px){
+    width: 1200px;
+  }
+
+
+
   @media screen and (min-width: 768px) {
     padding-top: 38px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    z-index: 10;
   }
 }
 
@@ -10,9 +35,6 @@
   @media screen and (min-width: 1200px) {
     display: flex;
     align-items: center;
-
-    // position: relative;
-    // z-index: 7;
   }
 }
 
@@ -196,6 +218,10 @@
   @media screen and (min-width: 768px) {
     width: 160px;
   }
+
+  @media screen and (min-width:1400px){
+    right: -6px;
+  }
 }
 
 .header-wrapper-list {
@@ -270,35 +296,66 @@
   }
 }
 
-// .hero-wrapper {
-//   position: absolute;
-//   width: 700px;
-//   height: 400px;
-//   top: 50%;
-//   transform: translateY(-50%);
-//   @media screen and (min-width:1200px){
-//     width: 700px;
-//     height: 557px;
-//   }
-// }
+.hero-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9;
+  // z-index: 15;
 
-// .hero-wrapper-title {
-//   position: absolute;
-//   bottom: 160px;
-//   z-index: 3;
-//   @media screen and (min-width: 768px) {
-//     bottom: 173px;
-//     left: 34px;
-//   }
-//   @media screen and (min-width: 1200px) {
-//     width: 277px;
-//   }
-// }
+  width: 320px;
+  height: 502px;
+  &::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+
+    right: -62px;
+    bottom:75px;
+
+    width: 346px;
+    height: 344px;
+
+    border-radius: 50%;
+    background-color: $h3-text-color;
+
+    @media screen and (min-width: 768px) {
+      right: 137px;
+      bottom: 46px;
+
+      width: 324px;
+      height: 322px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 538px;
+      height: 538px;
+
+      right: 164px;
+      bottom: 75px;
+      // bottom: -502px;
+    }
+  }
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    height: 400px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1280px;
+    height: 665px;
+  }
+}
 
 .main {
   position: absolute;
   bottom: 160px;
-  z-index: 3;
+  z-index: 6;
 
   width: 218px;
 
@@ -405,6 +462,10 @@
   @media screen and (min-width: 1200px) {
     top: 157px;
     right: 98px;
+  }
+
+  @media screen and (min-width: 1400px) {
+    right: 22px;
   }
 }
 
@@ -541,35 +602,35 @@
   }
 }
 
-.hero-circle {
-  position: absolute;
-  z-index: 1;
+// .hero-circle {
+//   position: absolute;
+//   z-index: 1;
 
-  right: -62px;
-  bottom: 75px;
+//   right: -62px;
+//   bottom: 75px;
 
-  width: 346px;
-  height: 344px;
+//   width: 346px;
+//   height: 344px;
 
-  border-radius: 50%;
-  background-color: $h3-text-color;
+//   border-radius: 50%;
+//   background-color: $h3-text-color;
 
-  @media screen and (min-width: 768px) {
-    right: 137px;
-    bottom: 46px;
+//   @media screen and (min-width: 768px) {
+//     right: 137px;
+//     bottom: 46px;
 
-    width: 324px;
-    height: 322px;
-  }
+//     width: 324px;
+//     height: 322px;
+//   }
 
-  @media screen and (min-width: 1200px) {
-    width: 538px;
-    height: 538px;
+//   @media screen and (min-width: 1200px) {
+//     width: 538px;
+//     height: 538px;
 
-    right: 164px;
-    bottom: 75px;
-  }
-}
+//     right: 164px;
+//     bottom: 75px;
+//   }
+// }
 
 .hero-title {
   font-family: $titan;
@@ -593,15 +654,18 @@
   position: absolute;
   bottom: 0;
   right: 32px;
-  z-index: 2;
+  z-index: 5;
 
   width: 171px;
   height: 410px;
+
+
 
   background-image: url(../images/mobile-hero-iceCream.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
   @media screen and (min-width: 768px) {
     background-image: url(../images/tablet-hero-iceCream.png);
 
