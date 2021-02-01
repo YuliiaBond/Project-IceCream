@@ -188,7 +188,8 @@
 
   transition: background-color 250ms $timing-function;
 
-  &:hover,&:focus{
+  &:hover,
+  &:focus {
     background-color: $btn-hover;
   }
 
@@ -217,7 +218,8 @@
 
   transition: background-color 250ms $timing-function;
 
-  &:hover,&:focus{
+  &:hover,
+  &:focus {
     background-color: $btn-hover;
   }
 
@@ -456,7 +458,8 @@
 
   transition: background-color 250ms $timing-function;
 
-  &:hover,&:focus{
+  &:hover,
+  &:focus {
     background-color: $slider-dots;
   }
 
@@ -474,10 +477,10 @@
 
   transition: background-color 250ms $timing-function;
 
-  &:hover,&:focus{
+  &:hover,
+  &:focus {
     background-color: $btn-hover;
   }
-
 }
 
 .hero-wrapper-numbers {
@@ -531,10 +534,22 @@
   background-position: center;
   background-size: cover;
 
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url(../images/tablet-milk@x2.png);
+  }
+
   @media screen and (min-width: 1200px) {
     width: 188px;
     height: 191px;
     background-image: url(../images/desktop-milk.png);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/desktop-milk@x2.png);
+    }
   }
 }
 
@@ -564,11 +579,23 @@
   background-position: center;
   background-size: cover;
 
+  @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image:url(../images/hero-tablet-arrow@x2.png);
+    }
+
   @media screen and (min-width: 1200px) {
     width: 26px;
     height: 26px;
     background-image: url(../images/hero-desktop-arrow.png);
     margin-top: 20px;
+
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image:url(../images/hero-desktop-arrow@x2.png);
+}
   }
 }
 
