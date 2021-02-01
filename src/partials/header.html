@@ -1,88 +1,166 @@
-<header class="header">
-  <div class="header-circle"></div>
-  <div class="container header">
-    <nav class="nav">
-      <div class="header-box">
-        <a class="logo" href="#">
-          <picture>
-            <img class="logo-img" src="./images/logo.png" alt="logo" />
-          </picture>
-        </a>
-        <button
-          class="header-btn-burger"
-          type="button"
-          aria-controls="header-holder"
-          aria-expanded="false"
-          data-menu-button
-        >
-          <svg class="header-icon" aria-label="Переключатель мобильного меню">
-            <use class="icon-menu" href="./images/sprite.svg#burger"></use>
-            <use class="icon-cross" href="./images/sprite.svg#close"></use>
-          </svg>
-        </button>
-      </div>
-      <div class="header-holder" id="header-holder" data-menu>
-        <a class="header-btn-buy" href="#">Buy now &#8250</a>
-        <ul class="list">
-          <li class="item">
-            <a class="link" href="#">Home</a>
-          </li>
-          <li class="item">
-            <a class="link" href="#">About us</a>
-          </li>
-          <li class="item">
-            <a class="link" href="#">How it’s made?</a>
-          </li>
-          <li class="item">
-            <a class="link" href="#">Our products</a>
-          </li>
-          <li class="item">
-            <a class="link" href="#">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <div class="header-wrapper">
-      <div class="header-wrapper__title">
-        <h1 class="header-title">ice cream made with <span>passion</span></h1>
-        <ul class="list">
-          <li class="item"><a class="link" href="#">Products</a></li>
-          <li class="item">
-            <a class="link second" href="#">How it’s made?</a>
-          </li>
-        </ul>
-      </div>
-      <div class="header-wrapper__numbers">
-        <ul class="list">
-          <li class="item">
-            <div class="number">16</div>
-            <p class="text">cafes</p>
-          </li>
-          <li class="item">
-            <div class="number">23</div>
-            <p class="text">food trucks</p>
-          </li>
-        </ul>
-      </div>
-      <div class="header-wrapper__milk">
-        <picture>
-          <img class="header-milk" src="" alt="milk" />
-        </picture>
-        <p class="text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et
-        </p>
-      </div>
-      <picture>
-        <img
-          class="header-icecream"
-          src="./images/mobile-hero-iceCream.png"
-          alt="ice cream"
-        />
-      </picture>
-      <picture>
-        <img class="header-girl" src="" alt="girl width ice cream" />
-      </picture>
+<section class="hero">
+  <header class="header" >
+    <div class="container-main">
+      <nav class="hero-nav">
+        <div class="header-box">
+          <a class="logo" href="#">
+              icecream
+          </a>
+          <button
+            class="header-btn-burger"
+            type="button"
+            aria-controls="header-wrapper"
+            aria-expanded="false"
+            data-menu-button
+          >
+            <svg class="header-icon" aria-label="Переключатель мобильного меню">
+              <use class="icon-menu" href="./images/sprite.svg#burger"></use>
+              <use class="icon-cross" href="./images/sprite.svg#close"></use>
+            </svg>
+          </button>
+        </div>
+        <a class="header-wrapper-header-btn-main" href="#">Buy now &#8250</a>
+        <div class="header-wrapper" id="header-wrapper" data-menu>
+          <a class="header-wrapper-header-btn" href="#">Buy now &#8250</a>
+          <ul class="header-wrapper-list">
+            <li class="header-wrapper-item">
+              <a class="header-wrapper-link" href="#">Home</a>
+            </li>
+            <li class="header-wrapper-item">
+              <a class="header-wrapper-link" href="#">About us</a>
+            </li>
+            <li class="header-wrapper-item">
+              <a class="header-wrapper-link" href="#">How it’s made?</a>
+            </li>
+            <li class="header-wrapper-item">
+              <a class="header-wrapper-link" href="#">Our products</a>
+            </li>
+            <li class="header-wrapper-item">
+              <a class="header-wrapper-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </div>
-  </div>
-</header>
+  </header>
+    <div class="container-main">
+      <div class="hero-wrapper">
+        <div class="hero-wrapper-title main">
+          <h1 class="main-title">ice cream made with <span>passion</span></h1>
+          <ul class="main-list">
+            <li class="main-item"><a class="main-link" href="#">Products</a></li>
+            <li class="main-item">
+              <a class="main-link second" href="#">How it’s made?</a>
+            </li>
+          </ul>
+        </div>
+        <div class="hero-wrapper-numbers numbers">
+          <ul class="numbers-list">
+            <li class="numbers-item">
+              <div class="numbers-num">16</div>
+              <p class="numbers-text">cafes</p>
+            </li>
+            <li class="numbers-item">
+              <div class="numbers-num">23</div>
+              <p class="numbers-text">food trucks</p>
+            </li>
+          </ul>
+        </div>
+        <div class="hero-wrapper-milk milk">
+          <picture class="milk-img">
+            <source media="(min-width: 1200px)" type="image/webp" srcset="
+                        ./images/alternative-hero+header/slider-milk-desktop@1x.webp 1x,
+                        ./images/alternative-hero+header/slider-milk-desktop@2x.webp 2x, 
+                        ./images/alternative-hero+header/slider-milk-desktop@3x.webp 3x">
+            <source media="(min-width: 768px)" type="image/webp" srcset="
+                        ./images/alternative-hero+header/slider-milk-tablet@1x.webp 1x,
+                        ./images/alternative-hero+header/slider-milk-tablet@2x.webp 2x, 
+                        ./images/alternative-hero+header/slider-milk-tablet@3x.webp 3x">
+            <source media="(min-width: 1200px)" type="image/png" srcset="
+                        ./images/alternative-hero+header/slider-milk-desktop@1x.png 1x,
+                        ./images/alternative-hero+header/slider-milk-desktop@2x.png 2x, 
+                        ./images/alternative-hero+header/slider-milk-desktop@3x.png 3x">
+            <img alt="milk" srcset="
+                        ./images/alternative-hero+header/slider-milk-tablet@1x.png 1x,
+                        ./images/alternative-hero+header/slider-milk-tablet@2x.png 2x, 
+                        ./images/alternative-hero+header/slider-milk-tablet@3x.png 3x"
+                src="./images/alternative-hero+header/slider-milk-tablet@1x.png">
+        </picture>        
+          <div class="milk-wrapper">
+            <p class="milk-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et
+          </p>
+          <a  class="milk-link" href="#">
+            <picture>
+              <source media="(min-width: 1200px)" type="image/webp" srcset="
+                      ./images/alternative-hero+header/arrow-right-3-desktop@1x.webp 1x,
+                      ./images/alternative-hero+header/arrow-right-3-desktop@2x.webp 2x, 
+                      ./images/alternative-hero+header/arrow-right-3-desktop@3x.webp 3x">
+              <source media="(min-width: 768px)" type="image/webp" srcset="
+                      ./images/alternative-hero+header/arrow-right-3-tablet@1x.webp 1x,
+                      ./images/alternative-hero+header/arrow-right-3-tablet@2x.webp 2x, 
+                      ./images/alternative-hero+header/arrow-right-3-tablet@3x.webp 3x">
+              <source media="(min-width: 1200px)" type="image/png" srcset="
+                      ./images/alternative-hero+header/arrow-right-3-desktop@1x.png 1x,
+                      ./images/alternative-hero+header/arrow-right-3-desktop@2x.png 2x, 
+                      ./images/alternative-hero+header/arrow-right-3-desktop@3x.png 3x">
+              <img alt="arrow-right" width="26" height="26" srcset="
+                      ./images/alternative-hero+header/arrow-right-3-tablet@1x.png 1x,
+                      ./images/alternative-hero+header/arrow-right-3-tablet@2x.png 2x, 
+                      ./images/alternative-hero+header/arrow-right-3-tablet@3x.png 3x"
+                  src="./images/alternative-hero+header/arrow-right-3-desktop@1x.png">
+          </picture>        
+          </a>
+          </div>
+        </div>
+        <picture class="hero-icecream">
+          <source media="(min-width: 1200px)" type="image/webp" srcset="
+                      ./images/alternative-hero+header/slider-icecream-desktop@1x.webp 1x,
+                      ./images/alternative-hero+header/slider-icecream-desktop@2x.webp 2x, 
+                      ./images/alternative-hero+header/slider-icecream-desktop@3x.webp 3x">
+          <source media="(min-width: 768px)" type="image/webp" srcset="
+                      ./images/alternative-hero+header/slider-icecream-tablet@1x.webp 1x,
+                      ./images/alternative-hero+header/slider-icecream-tablet@2x.webp 2x, 
+                      ./images/alternative-hero+header/slider-icecream-tablet@3x.webp 3x">
+          <source media="(max-width: 767px)" type="image/webp" srcset="
+                      ./images/alternative-hero+header/slider-icecream-mobile@1x.webp 1x,
+                      ./images/alternative-hero+header/slider-icecream-mobile@2x.webp 2x, 
+                      ./images/alternative-hero+header/slider-icecream-mobile@3x.webp 3x">
+          <source media="(min-width: 1200px)" type="image/png" srcset="
+                      ./images/alternative-hero+header/slider-icecream-desktop@1x.png 1x,
+                      ./images/alternative-hero+header/slider-icecream-desktop@2x.png 2x, 
+                      ./images/alternative-hero+header/slider-icecream-desktop@3x.png 3x">
+          <source media="(min-width: 768px)" type="image/png" srcset="
+                      ./images/alternative-hero+header/slider-icecream-tablet@1x.png 1x,
+                      ./images/alternative-hero+header/slider-icecream-tablet@2x.png 2x, 
+                      ./images/alternative-hero+header/slider-icecream-tablet@3x.png 3x">
+          <img alt="icecream" srcset="
+                      ./images/alternative-hero+header/slider-icecream-mobile@1x.png 1x,
+                      ./images/alternative-hero+header/slider-icecream-mobile@2x.png 2x, 
+                      ./images/alternative-hero+header/slider-icecream-mobile@3x.png 3x"
+              src="./images/alternative-hero+header/slider-icecream-mobile@1x.png">
+      </picture>
+        <picture class="hero-girl">
+          <source media="(min-width: 1200px)" type="image/webp" srcset="
+                  ./images/alternative-hero+header/slider-girl-desktop@1x.webp 1x,
+                  ./images/alternative-hero+header/slider-girl-desktop@2x.webp 2x, 
+                  ./images/alternative-hero+header/slider-girl-desktop@3x.webp 3x">
+          <source media="(min-width: 768px)" type="image/webp" srcset="
+                  ./images/alternative-hero+header/slider-girl-tablet@1x.webp 1x,
+                  ./images/alternative-hero+header/slider-girl-tablet@2x.webp 2x, 
+                  ./images/alternative-hero+header/slider-girl-tablet@3x.webp 3x">
+          <source media="(min-width: 1200px)" type="image/png" srcset="
+                  ./images/alternative-hero+header/slider-girl-desktop@1x.png 1x,
+                  ./images/alternative-hero+header/slider-girl-desktop@2x.png 2x, 
+                  ./images/alternative-hero+header/slider-girl-desktop@3x.png 3x">
+          <img alt="girl tolding sooooo tasty!" srcset="
+                  ./images/alternative-hero+header/slider-girl-tablet@1x.png 1x,
+                  ./images/alternative-hero+header/slider-girl-tablet@2x.png 2x, 
+                  ./images/alternative-hero+header/slider-girl-tablet@3x.png 3x"
+              src="./images/alternative-hero+header/slider-girl-tablet@1x.png">
+      </picture>
+      </div>
+    </div>
+</section>
+   
