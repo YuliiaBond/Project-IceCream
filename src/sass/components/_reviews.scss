@@ -185,7 +185,7 @@
   }
 }
 .swiper-pagination-bullet-active {
-  background-color: #ffffff;
+  background-color: $bg-color;
 
   &:before {
     display: block;
