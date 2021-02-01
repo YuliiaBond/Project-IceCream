@@ -686,44 +686,17 @@
   width: 171px;
   height: 410px;
 
-  background-image: url(../images/mobile-hero-iceCream.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-
-  @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    background-image: url(../images/mobile-hero-iceCream@x2.png);
-  }
-
   @media screen and (min-width: 768px) {
-    background-image: url(../images/tablet-hero-iceCream.png);
-
     width: 143px;
     height: 336px;
     right: 247px;
-
-    @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
-      background-image: url(../images/tablet-hero-iceCream@x2.png);
-    }
   }
 
   @media screen and (min-width: 1200px) {
-    background-image: url(../images/desktop-hero-iceCream.png);
-
     width: 236px;
     height: 557px;
 
     right: 345px;
-
-    @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
-      background-image: url(../images/desktop-hero-iceCream@x2.png);
-    }
   }
 }
 
