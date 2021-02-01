@@ -1,51 +1,46 @@
-.container {
-  // background-color: $secondary-bg-color;
-
-  @media screen and (min-width: 768px) {
-    flex-direction: column;
-    padding-left: 36px;
-    padding-right: 36px;
-  }
-  @media screen and (min-width: 1200px) {
-    // flex-direction: column;
-    padding-left: 115px;
-    padding-right: 115px;
-  }
-}
-.section-making {
-  // position: absolute;
+.making {
   background-color: $secondary-bg-color;
-  padding-top: 125px;
-  padding-bottom: 145px;
-  @media screen and (min-width: 768px) {
-    padding-top: 130px;
-    padding-bottom: 246px;
-  }
-  @media screen and (min-width: 1200px) {
-    background-image: url(../images/desktop/sectionbgfon.webp);
-    background-repeat: no-repeat;
-    background-position: center;
-    padding-top: 125px;
-    padding-bottom: 310px;
-  }
   @media screen and (max-width: 767px) {
+    background-color: $secondary-bg-color;
     background-image: url(../images/mobile/sectionbgmobile.webp);
     background-repeat: no-repeat;
     background-position: center;
   }
+  @media screen and (min-width: 1200px) {
+    background-color: $secondary-bg-color;
+    background-image: url(../images/desktop/sectionbgfon.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
+.making .container {
+  padding-top: 125px;
+  padding-bottom: 145px;
+  @media screen and (min-width: 768px) {
+    flex-direction: column;
+    padding-top: 130px;
+    padding-right: 36px;
+    padding-bottom: 246px;
+    padding-left: 36px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 125px;
+    padding-right: 115px;
+    padding-bottom: 310px;
+    padding-left: 115px;
+  }
+}
+
 .making-title {
-  margin-top: 0px;
-  margin-bottom: 26px;
-  text-align: center;
-  text-transform: uppercase;
   font-family: $titan;
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 1.17;
+  text-align: center;
+  text-transform: uppercase;
   color: $h3-text-color;
-
+  margin-bottom: 15px;
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     font-size: 26px;
     line-height: 1.15;
@@ -57,27 +52,27 @@
   }
 }
 .making-subtitle {
-  margin-top: 15px;
-  display: block;
   font-family: $titan;
+  font-style: normal;
+  font-weight: 400;
   font-size: 34px;
   line-height: 1.15;
   letter-spacing: 0.04em;
-  font-style: normal;
-  font-weight: 400;
+
   text-align: center;
   text-transform: uppercase;
   color: $accent-color;
+  margin-bottom: 26px;
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) {
     font-size: 48px;
-    line-height: 1.15;
-    letter-spacing: 0.04em;
+    margin-bottom: 50px;
   }
   @media screen and (min-width: 1200px) {
     font-size: 58px;
     line-height: 1.14;
     letter-spacing: 0.06em;
+    margin-bottom: 55px;
   }
 }
 .making-basis {
@@ -88,31 +83,30 @@
   // @media screen and (min-width: 1200px) {
   // }
 }
-.foto-crow {
-  @media screen and (min-width: 768px) {
-    min-width: 340px;
-    height: 340px;
-    display: flex;
-    justify-content: center;
-  }
-  @media screen and (min-width: 1200px) {
-    min-width: 516px;
-    height: 516px;
-    display: flex;
-    justify-content: center;
-  }
-}
+// .foto-crow {
+//   @media screen and (min-width: 768px) {
+//     min-width: 340px;
+//     height: 340px;
+//     display: flex;
+//     justify-content: center;
+//   }
+//   @media screen and (min-width: 1200px) {
+//     min-width: 516px;
+//     height: 516px;
+//     display: flex;
+//     justify-content: center;
+//   }
+// }
 
 .making-text {
-  display: flex;
-  flex-direction: column;
-  padding-left: 0;
-  padding-right: 0;
+  width: 220px;
   @media screen and (min-width: 768px) {
     margin-left: 17px;
+    width: 340px;
   }
   @media screen and (min-width: 1200px) {
     margin-left: 74px;
+    width: 463px;
   }
 }
 
@@ -122,81 +116,48 @@
 //   margin-left: 17px;
 // }
 .making-description {
-  //   padding-right: 30px;
-  //   padding-left: 30px;
-
-  margin-top: 46px;
-
+  margin-bottom: 47px;
   font-family: $dm-sans;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
-  line-height: 1.58;
+  line-height: 1.62;
   color: $secondary-text-color;
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    font-size: 14px;
-    line-height: 1.76;
-    font-weight: 500;
-
-    display: flex;
-    flex-wrap: wrap;
-  }
-  @media screen and (min-width: 1200px) {
-    line-height: 1.76;
-    font-weight: 500;
-    // max-width: 463px;
-  }
-}
-.making-description {
-  @media screen and (max-width: 767px) {
-    padding-right: 30px;
-    padding-left: 30px;
-    margin-bottom: 47px;
-  }
-
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) {
     margin-bottom: 49px;
-    margin-left: 17px;
-
     font-size: 14px;
     line-height: 1.76;
   }
   @media screen and (min-width: 1200px) {
     font-size: 16px;
+    line-height: 1.76;
     letter-spacing: 0.04em;
-    margin-bottom: 35px;
   }
 }
 .making-promotion {
-  color: $third-text-color;
+  margin-bottom: 20px;
+  font-family: $dm-sans;
+  font-style: normal;
   font-weight: 500;
+  font-size: 12px;
+  line-height: 1.62;
 
-  @media screen and (max-width: 767px) {
-    font-family: $dm-sans;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.62;
-    padding-right: 30px;
-    padding-left: 30px;
-    margin-top: 0;
-    margin-bottom: 47px;
-  }
+  color: $third-text-color;
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    margin-left: 17px;
+  @media screen and (min-width: 768px) {
     font-size: 14px;
     letter-spacing: 0.04em;
-    margin-bottom: 62px;
-    line-height: 1.79;
+    line-height: 1.76;
   }
   @media screen and (min-width: 1200px) {
+    margin-bottom: 40px;
     font-size: 14px;
     line-height: 1.94;
-    letter-spacing: 0.04em;
-    margin-bottom: 45px;
   }
+}
+.promotion-two {
+  margin-bottom: 0;
 }
 .making-btn {
   min-width: 176px;
@@ -225,6 +186,7 @@
   }
 }
 .making-btn-style {
+  margin-top: 17px;
   margin-bottom: 39px;
   margin-left: 50px;
   @media screen and (max-width: 767px) {
@@ -235,8 +197,10 @@
     display: flex;
     justify-content: start;
     margin-left: 17px;
+    margin-top: 62px;
   }
   @media screen and (min-width: 1200px) {
+    nt: 45;
     margin-left: 0;
   }
 }

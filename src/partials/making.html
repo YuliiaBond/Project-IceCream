@@ -1,49 +1,27 @@
-  <section>
-    <div class="section-making">
-      <div class="container">
-        <h2 class="making-title"><a name="How_made"></a>
+  <section class="making" >
+    <div class="container">
+        <h3 class="making-title"><a name="How_made"></a>
           tradition and love
-          <span class="making-subtitle">how it’s made?</span>
-        </h2>
+        </h3>
+        <h2 class="making-subtitle">how it’s made?</h2>
         <div class="making-basis">
-          <picture class="foto-crow">
-
-            <source media="(min-width: 1200px)" srcset="
-                                              ./images/desktop/webp/Cow1200.webp 1x,
-                                              ./images/desktop/webp/Cow1200.webp 2x,
-                                              ./images/desktop/webp/Cow1200.webp 3x
-                                            " type="image/webp" />
-            <source media="(min-width: 768px)" srcset="
-                                              ./images/tablet/webp/Cow768.webp    1x,
-                                              ./images/tablet/webp/Cow768@2x.webp 2x,
-                                              ./images/tablet/webp/Cow768@3x.webp 3x
-                                            " type="image/webp" />
-            <source media="(max-width: 767px)" srcset="
-                                              ./images/mobile/webp/Cow320.webp    1x,
-                                              ./images/mobile/webp/Cow320@2x.webp 2x,
-                                              ./images/mobile/webp/Cow320@3x.webp 3x
-                                            " type="image/webp" />
-            <source media="(min-width: 1200px)" srcset="
-                                              ./images/desktop/Cow1200.png    1x,
-                                              ./images/desktop/Cow1200@2x.png 2x,
-                                              ./images/desktop/Cow1200@3x.png 3x
-                                            " />
-            <source media="(min-width: 768px)" srcset="
-                                              ./images/tablet/Cow768.png    1x,
-                                              ./images/tablet/Cow768@2x.png 2x,
-                                              ./images/tablet/Cow768@3x.png 3x
-                                            " />
-            <source media="(max-width: 767px)" srcset="
-
-                                              ./images/mobile/Cow320.png    1x,
-                                              ./images/mobile/Cow320@2x.png 2x,
-                                              ./images/mobile/Cow320@3x.png 3x
-                                            " />
-            <img srcset="
-                                              ./images/mobile/Cow320.png    1x,
-                                              ./images/mobile/Cow320@2x.png 2x,
-                                              ./images/mobile/Cow320@3x.png 3x
-                                            " src="./images/mobile/Cow320.png" alt="Cow" loading="lazy" />
+          <picture>
+            <source media="(min-width: 1200px)" srcset="./images/making/making-cow-desk.webp 1x,
+                                                        ./images/making/making-cow-desk@2x.webp 2x"
+                                                          type="image/webp">
+            <source media="(min-width: 768px)" srcset="./images/making/making-cow-tab.webp 1x, 
+                                                          ./images/making/making-cow-tab@2x.webp 2x"                                                              
+                                                          type="image/webp">
+            <source srcset="./images/making/making-cow-mob.webp 1x,
+                                                          ./images/making/making-cow-mob@2x.webp 2x"                                                            
+                                                          type="image/webp">
+            <source media="(min-width: 1200px)" srcset="./images/making/making-cow-desk.png 1x,
+                                                          ./images/making/making-cow-desk@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="./images/making/making-cow-tab.png 1x,
+                                                          ./images/making/making-cow-tab@2x.png 2x">
+            <img srcset="./images/making/making-cow-mob.png 1x, 
+                                                          ./images/making/making-cow-mob@2x.png 2x"
+              src="./images/making/making-cow-mob.png" alt="Cow" loading="lazy">
           </picture>
           <div class="making-text">
             <p class="making-description">
@@ -55,7 +33,9 @@
               Curabitur lacinia enim at ex blandit, vel pellentesque odio
               elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum
               euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras
-              massa nibh, tincidunt.<br /><br />
+              massa nibh, tincidunt.
+            </p>
+            <p class="making-promotion promotion-two">
               Aliquam erat volutpat. Aenean accumsan.
             </p>
             <div class="making-btn-style">
@@ -136,9 +116,48 @@
 
           </li>
         </ul>
-      </div>
     </div>
+  
     <include src="./partials/gallery.html"></include>
   </section>
 
 
+
+            <!-- <picture>
+                        <source media="(min-width: 1200px)" srcset="
+                                                          ./images/desktop/webp/Cow1200.webp 1x,
+                                                          ./images/desktop/webp/Cow1200.webp 2x,
+                                                          ./images/desktop/webp/Cow1200.webp 3x
+                                                        " type="image/webp" />
+                        <source media="(min-width: 768px)" srcset="
+                                                          ./images/tablet/webp/Cow768.webp    1x,
+                                                          ./images/tablet/webp/Cow768@2x.webp 2x,
+                                                          ./images/tablet/webp/Cow768@3x.webp 3x
+                                                        " type="image/webp" />
+                        <source media="(max-width: 767px)" srcset="
+                                                          ./images/mobile/webp/Cow320.webp    1x,
+                                                          ./images/mobile/webp/Cow320@2x.webp 2x,
+                                                          ./images/mobile/webp/Cow320@3x.webp 3x
+                                                        " type="image/webp" />
+                        <source media="(min-width: 1200px)" srcset="
+                                                          ./images/desktop/Cow1200.png    1x,
+                                                          ./images/desktop/Cow1200@2x.png 2x,
+                                                          ./images/desktop/Cow1200@3x.png 3x
+                                                        " />
+                        <source media="(min-width: 768px)" srcset="
+                                                          ./images/tablet/Cow768.png    1x,
+                                                          ./images/tablet/Cow768@2x.png 2x,
+                                                          ./images/tablet/Cow768@3x.png 3x
+                                                        " />
+                        <source media="(max-width: 767px)" srcset="
+            
+                                                          ./images/mobile/Cow320.png    1x,
+                                                          ./images/mobile/Cow320@2x.png 2x,
+                                                          ./images/mobile/Cow320@3x.png 3x
+                                                        " />
+                        <img srcset="
+                                                          ./images/mobile/Cow320.png    1x,
+                                                          ./images/mobile/Cow320@2x.png 2x,
+                                                          ./images/mobile/Cow320@3x.png 3x
+                                                        " src="./images/mobile/Cow320.png" alt="Cow" loading="lazy" />
+                      </picture> -->
