@@ -529,27 +529,10 @@
 .milk-img {
   width: 124px;
   height: 126px;
-  background-image: url(../images/tablet-milk.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-
-  @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    background-image: url(../images/tablet-milk@x2.png);
-  }
 
   @media screen and (min-width: 1200px) {
     width: 188px;
     height: 191px;
-    background-image: url(../images/desktop-milk.png);
-
-    @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
-      background-image: url(../images/desktop-milk@x2.png);
-    }
   }
 }
 
