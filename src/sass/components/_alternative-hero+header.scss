@@ -13,6 +13,8 @@
   padding-top: 6px;
   padding-left: 20px;
   padding-right: 20px;
+  margin-right: auto;
+  margin-left: auto;
   min-width: 320px;
   @media all and (min-width: 768px) {
     padding-left: 34px;
@@ -167,8 +169,9 @@
   font-weight: 500;
   font-size: 11px;
   line-height: 1.27;
+  display: inline-flex;
   align-items: center;
-  text-align: center;
+  justify-content: center;
   color: $accent-color;
   background-color: $primary-text-color;
   &:hover,

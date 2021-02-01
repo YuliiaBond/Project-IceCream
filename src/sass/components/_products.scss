@@ -1,15 +1,15 @@
-.products {
-  padding-top: 121px;
-  padding-bottom: 98px;
-  @media screen and (min-width: 768px) {
-    padding-top: 122px;
-    padding-bottom: 112px;
-  }
-  @media screen and (min-width: 1200px) {
-    padding-top: 128px;
-    padding-bottom: 119px;
-  }
-}
+// .products {
+//   padding-top: 121px;
+//   padding-bottom: 98px;
+//   @media screen and (min-width: 768px) {
+//     padding-top: 122px;
+//     padding-bottom: 112px;
+//   }
+//   @media screen and (min-width: 1200px) {
+//     padding-top: 128px;
+//     padding-bottom: 119px;
+//   }
+// }
 .products-list {
   justify-content: center;
 
@@ -31,8 +31,8 @@
 
   border-radius: 24px;
   padding-top: 161px;
-  padding-left: 41px;
-  padding-right: 41px;
+  padding-left: 44px;
+  padding-right: 44px;
   padding-bottom: 41px;
 
   @media screen and (min-width: 768px) {
@@ -74,30 +74,35 @@
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 1.52;
 
   text-align: center;
   letter-spacing: 0.04em;
 
   color: $primary-text-color;
-
+  margin-bottom: 30px;
   @media screen and (min-width: 768px) {
-    font-size: 14px;
-    line-height: 1.75;
+    line-height: 1.76;
+    margin-bottom: 40px;
   }
   @media screen and (min-width: 1200px) {
     font-size: 16px;
-    line-height: 1.76;
+    margin-bottom: 62px;
+  }
+}
+.text-nomobile {
+  @media screen and (min-width: 768px) {
+    display: none;
   }
 }
 .products-card-name {
-  margin-bottom: 32px;
+  margin-bottom: 30px;
 
   font-family: $titan;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
-  line-height: 1.13;
+  line-height: 1.15;
 
   text-align: center;
   letter-spacing: 0.04em;
@@ -106,7 +111,9 @@
   color: $primary-text-color;
 
   @media screen and (min-width: 1200px) {
+    margin-bottom: 32px;
     font-size: 30px;
+    line-height: 1.13;
   }
 }
 // .soc-media-logo {
@@ -116,7 +123,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 32px;
+  margin-bottom: 30px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 32px;
+  }
 }
 .products-media-link-right {
   margin-right: auto;
