@@ -186,6 +186,12 @@
   color: $accent-color;
   background-color: $primary-text-color;
 
+  transition: background-color 250ms $timing-function;
+
+  &:hover,&:focus{
+    background-color: $btn-hover;
+  }
+
   @media screen and (min-width: 1200px) {
     display: none;
   }
@@ -208,6 +214,12 @@
   top: 43px;
   right: 34px;
   z-index: 5;
+
+  transition: background-color 250ms $timing-function;
+
+  &:hover,&:focus{
+    background-color: $btn-hover;
+  }
 
   @media screen and (max-width: 767px) {
     display: none;
@@ -442,10 +454,11 @@
   color: $primary-text-color;
   background-color: $accent-color;
 
+  transition: background-color 250ms $timing-function;
+
   &:hover,&:focus{
     background-color: $slider-dots;
   }
-  // #ECEBEB
 
   @media screen and (min-width: 1200px) {
     font-size: 14px;
@@ -458,6 +471,13 @@
 .main-link.second {
   color: $accent-color;
   background-color: $primary-text-color;
+
+  transition: background-color 250ms $timing-function;
+
+  &:hover,&:focus{
+    background-color: $btn-hover;
+  }
+
 }
 
 .hero-wrapper-numbers {
