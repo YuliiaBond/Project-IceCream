@@ -21,9 +21,8 @@
 @import './base/container';
 
 // Подключение секций
-@import './components/hero';
-@import './components/header';
-@import './components/mobile-menu';
+@import './components/alternative-hero+header';
+
 @import './components/products';
 @import './components/making';
 @import './components/gallery';

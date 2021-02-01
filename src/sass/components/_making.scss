@@ -1,101 +1,209 @@
-.section-making {
+.making {
   background-color: $secondary-bg-color;
-  padding-top: 125px;
-  padding-right: auto;
-  padding-bottom: 145px;
-  padding-left: auto;
   @media screen and (max-width: 767px) {
-    padding-top: 125px;
-    padding-bottom: 145px;
+    background-color: $secondary-bg-color;
+    background-image: url(../images/mobile/sectionbgmobile.webp);
+    background-repeat: no-repeat;
+    background-position: center;
   }
+  @media screen and (min-width: 1200px) {
+    background-color: $secondary-bg-color;
+    background-image: url(../images/desktop/sectionbgfon.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+.making .container {
+  padding-top: 125px;
+  padding-bottom: 145px;
   @media screen and (min-width: 768px) {
+    flex-direction: column;
     padding-top: 130px;
+    padding-right: 36px;
     padding-bottom: 246px;
+    padding-left: 36px;
   }
   @media screen and (min-width: 1200px) {
     padding-top: 125px;
+    padding-right: 115px;
     padding-bottom: 310px;
+    padding-left: 115px;
   }
 }
 
 .making-title {
-  margin-top: 0px;
-  margin-bottom: 26px;
-  text-align: center;
-  text-transform: uppercase;
-  font-family: 'Titan One';
+  font-family: $titan;
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 1.17;
+  text-align: center;
+  text-transform: uppercase;
   color: $h3-text-color;
+  margin-bottom: 15px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 26px;
+    line-height: 1.15;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 30px;
+    line-height: 1.13;
+    letter-spacing: 0.04em;
+  }
 }
 .making-subtitle {
-  margin-top: 15px;
-  margin-bottom: 26px;
-  display: block;
-  font-family: 'Titan One';
+  font-family: $titan;
+  font-style: normal;
+  font-weight: 400;
   font-size: 34px;
   line-height: 1.15;
   letter-spacing: 0.04em;
-  font-style: normal;
-  font-weight: 400;
+
   text-align: center;
   text-transform: uppercase;
   color: $accent-color;
+  margin-bottom: 26px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    margin-bottom: 50px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 58px;
+    line-height: 1.14;
+    letter-spacing: 0.06em;
+    margin-bottom: 55px;
+  }
 }
+.making-basis {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    // margin-bottom: 66px;
+  }
+  // @media screen and (min-width: 1200px) {
+  // }
+}
+// .foto-crow {
+//   @media screen and (min-width: 768px) {
+//     min-width: 340px;
+//     height: 340px;
+//     display: flex;
+//     justify-content: center;
+//   }
+//   @media screen and (min-width: 1200px) {
+//     min-width: 516px;
+//     height: 516px;
+//     display: flex;
+//     justify-content: center;
+//   }
+// }
+
+.making-text {
+  width: 220px;
+  @media screen and (min-width: 768px) {
+    margin-left: 17px;
+    width: 340px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 74px;
+    width: 463px;
+  }
+}
+
+// .making-basic-column {
+//   display: flex;
+//   flex-direction: column;
+//   margin-left: 17px;
+// }
 .making-description {
-  padding-right: 30px;
-  padding-left: 30px;
-  margin-top: 46px;
   margin-bottom: 47px;
-  font-family: 'DM Sans';
+  font-family: $dm-sans;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
-  line-height: 1.58;
+  line-height: 1.62;
   color: $secondary-text-color;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 49px;
+    font-size: 14px;
+    line-height: 1.76;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 1.76;
+    letter-spacing: 0.04em;
+  }
 }
 .making-promotion {
-  padding-right: 30px;
-  padding-left: 30px;
-  margin-top: 0;
-  margin-bottom: 17px;
-  font-family: 'DM Sans';
+  margin-bottom: 20px;
+  font-family: $dm-sans;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
-  line-height: 1.58;
+  line-height: 1.62;
+
   color: $third-text-color;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    letter-spacing: 0.04em;
+    line-height: 1.76;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 40px;
+    font-size: 14px;
+    line-height: 1.94;
+  }
+}
+.promotion-two {
+  margin-bottom: 0;
 }
 .making-btn {
-  padding: 0;
   min-width: 176px;
   min-height: 44px;
+  border-radius: 22px;
+  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  font-family: 'DM Sans';
+  // text-align: center;
+  font-family: $dm-sans;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
   line-height: 1.29;
-  border-radius: 22px;
+  // padding-left: 37px;
+
   color: $accent-color;
   background-color: $primary-text-color;
   border: none;
   cursor: pointer;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 1.31;
+  }
 }
 .making-btn-style {
-  //   padding-right: 94px;
-  //  padding-left: 50px;
+  margin-top: 17px;
   margin-bottom: 39px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin-left: 50px;
+  @media screen and (max-width: 767px) {
+    display: flex;
+    justify-content: start;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    justify-content: start;
+    margin-left: 17px;
+    margin-top: 62px;
+  }
+  @media screen and (min-width: 1200px) {
+    nt: 45;
+    margin-left: 0;
+  }
 }
-
 .making-btn::after {
   display: flex;
   content: '';
@@ -104,12 +212,20 @@
   background-repeat: no-repeat;
   background-position: center;
   margin-left: 14px;
-  width: 5px;
-  height: 8px;
+  position: relative;
+  top: 1.5px;
+  width: 6px;
+  height: 7.9px;
+}
+.making-list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 .making-massa {
   min-height: 54px;
-  font-family: 'Titan One';
+  font-family: $titan;
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
@@ -117,6 +233,17 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: $accent-color;
+
+  @media screen and (min-width: 767px) and (max-width: 1199px) {
+    letter-spacing: 0.04em;
+    font-size: 48px;
+    line-height: 1.15;
+  }
+  @media screen and (min-width: 1200px) {
+    letter-spacing: 0.04em;
+    font-size: 58px;
+    line-height: 1.14;
+  }
 }
 .making-circle {
   font-family: $dm-sans;
@@ -124,44 +251,85 @@
   font-size: 12px;
   line-height: 1.7;
   color: $secondary-text-color;
+
+  @media screen and (min-width: 767px) and (max-width: 1199px) {
+    font-size: 14px;
+    line-height: 1.74;
+  }
+  @media screen and (min-width: 1200px) {
+    letter-spacing: 0.02em;
+    font-size: 16px;
+    line-height: 1.76;
+  }
 }
+
+// .making-item {
+//   @media screen and (min-width: 768px) and (max-width: 1199px) {
+//     width: 180px;
+//     height: 222px;
+//   }
+//   @media screen and (min-width: 1200px) {
+//     width: 330px;
+//     height: 222px;
+//   }
+// }
 .making-item:not(:last-child) {
-  margin-bottom: 38px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 38px;
+  }
+  // @media screen and (min-width: 768px) {
+  //   margin-right: 30px;
+  // }
 }
 .making-item img:not(:last-child) {
   margin-bottom: 16px;
 }
+
 .making-item img {
   display: inline-block;
+  margin-bottom: 16px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 36px;
+  }
 }
+@media screen and (max-width: 767px) {
+  .making-item:not(:last-child) {
+    margin-bottom: 38px;
+  }
+}
+// .making-list .making-item {
+//   @media screen and (min-width: 768px) {
+//     max-width: 180px;
+//   }
+// }
 .overlay {
   margin-left: auto;
   margin-right: auto;
   max-width: 1600px;
-  background-image: url(../images/mobile/Cowbg320.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom;
-}
-
-@media screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
-  .overlay {
-    background-image: url(../images/mobile/Cowbg320@2x.png);
+  @media screen and (max-width: 767px) {
+    background-image: url(../images/mobile/Cowbg320.png);
   }
-}
-@media screen and (min-device-pixel-ratio: 3),
-  screen and (min-resolution: 288dpi),
-  screen and (min-resolution: 3dppx) {
-  .overlay {
-    background-image: url(../images/mobile/Cowbg320@3x.png);
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .overlay {
+      background-image: url(../images/mobile/Cowbg320@2x.png);
+    }
   }
-}
-
-@media screen and (min-width: 1200px) {
-  .overlay {
-    background-image: url(../images/desktop/Cowbg1200.png);
+  @media screen and (min-device-pixel-ratio: 3),
+    screen and (min-resolution: 288dpi),
+    screen and (min-resolution: 3dppx) {
+    .overlay {
+      background-image: url(../images/mobile/Cowbg320@3x.png);
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .overlay {
+      background-image: url(../images/desktop/Cowbg1200.png);
+    }
   }
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
