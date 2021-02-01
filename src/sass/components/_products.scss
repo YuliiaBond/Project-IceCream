@@ -1,134 +1,196 @@
 .products {
   padding-top: 121px;
   padding-bottom: 98px;
+  @media screen and (min-width: 768px) {
+    padding-top: 122px;
+    padding-bottom: 112px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 128px;
+    padding-bottom: 119px;
+  }
 }
-.products-card {
+.products-list {
+  justify-content: center;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin: -10px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin: -15px;
+  }
+}
+
+.products-item {
   position: relative;
-  background-color: #ffb8ca;
-  color: #ffffff;
+  background-color: $bgc-hero;
+  color: $primary-text-color;
   width: 280px;
-  height: 485px;
-  box-sizing: border-box;
 
-  box-shadow: rgba(255, 184, 202, 1);
   border-radius: 24px;
-  display: block;
-
-  box-sizing: border-box;
   padding-top: 161px;
   padding-left: 41px;
   padding-right: 41px;
   padding-bottom: 41px;
-  margin-bottom: 120px;
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 6 * 10px) / 3);
+
+    padding-top: 152px;
+    padding-left: 11px;
+    padding-right: 11px;
+    padding-bottom: 40px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 90px) / 3);
+
+    padding-top: 163px;
+    padding-left: 44px;
+    padding-right: 44px;
+    padding-bottom: 50px;
+  }
 }
-.products-card-grey {
-  position: relative;
-  background-color: #f0d1a5;
-  color: #ffffff;
-  width: 280px;
-  height: 485px;
-  box-sizing: border-box;
-
-  box-shadow: rgba(240, 209, 165, 1);
-  border-radius: 24px;
-  display: block;
-
-  box-sizing: border-box;
-  padding-top: 161px;
-  padding-left: 41px;
-  padding-right: 41px;
-  padding-bottom: 41px;
-  margin-bottom: 130px;
+.products-item:not(:last-child) {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 130px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-right: 20px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 29px;
+  }
 }
-.products-card-green {
-  position: relative;
-  display: block;
-  background-color: #c2e297;
-  color: #ffffff;
-  width: 280px;
-  height: 485px;
-
-  box-shadow: rgba(194, 226, 151, 1);
-  border-radius: 24px;
-  box-sizing: border-box;
-
-  padding-top: 161px;
-  padding-left: 41px;
-  padding-right: 41px;
-  padding-bottom: 41px;
+.grey {
+  background-color: $cafe-color;
 }
-
+.green {
+  background-color: $food-truck-color;
+}
 .social-card-section-text {
-  /* height: 124px;
-  width: 100%; */
-  display: flex;
-  font-family: DM Sans;
-  font-weight: bold;
+  font-family: $dm-sans;
+  font-style: normal;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.5;
 
   text-align: center;
   letter-spacing: 0.04em;
 
-  color: #ffffff;
+  color: $primary-text-color;
 
-  margin-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.75;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 1.76;
+  }
 }
 .products-card-name {
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 
-  font-family: Titan One;
+  font-family: $titan;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 20px;
-  line-height: 23px;
+  line-height: 1.13;
 
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
 
-  color: #ffffff;
+  color: $primary-text-color;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 30px;
+  }
 }
-.soc-media-logo {
-  margin-bottom: 30px;
-  justify-content: center;
-}
-.products-media-link {
+// .soc-media-logo {
+//   justify-content: center;
+// }
+.products-link {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 32px;
+}
+.products-media-link-right {
+  margin-right: auto;
+  margin-left: auto;
+  width: 40px;
+  height: 40px;
+
+  // margin-left: 80px;
+  @media screen and (min-width: 1200px) {
+    margin-top: 62px;
+  }
 }
 
 .products-thumb {
+  display: block;
   position: absolute;
   top: -25%;
   right: 15px;
   display: flex;
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    width: 220px;
+    top: -25%;
+    right: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 330px;
+    right: -13px;
+  }
 }
-.products-title h2 {
-  font-family: Titan One;
+
+.products-text {
+  font-family: $titan;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 18px;
-  line-height: 21px;
+  line-height: 1.17;
 
   text-align: center;
   text-transform: uppercase;
 
-  color: #ffa5ba;
+  color: $h3-text-color;
 
   margin-bottom: 15px;
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.15;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 30px;
+    line-height: 1.13;
+    letter-spacing: 0.04em;
+  }
 }
-.products-title h1 {
-  font-family: Titan One;
+.products-title {
+  margin-bottom: 144px;
+  font-family: $titan;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 34px;
-  line-height: 39px;
+  line-height: 1.15;
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
 
-  color: #d41443;
-  margin-bottom: 144px;
+  color: $accent-color;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 150px;
+    font-size: 48px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 259px;
+    font-size: 58px;
+    line-height: 1.14;
+  }
 }

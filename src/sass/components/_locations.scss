@@ -191,6 +191,7 @@
     }
   }
   .location-arrow {
+    display: inline-flex;
     width: 4.3px;
     height: 8px;
     transition: color 250ms $timing-function;

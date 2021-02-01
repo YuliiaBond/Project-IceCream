@@ -33,7 +33,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  width: 250px;
+  width: 100%;
   height: 502px;
   padding-top: 60px;
 
@@ -47,7 +47,7 @@
   opacity: 0;
   transform: translate(100%, 0);
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .menu-in {
   transform: translate(0, 0);
@@ -60,7 +60,8 @@
   right: 28px;
 }
 .button-buy {
-  margin-left: 21px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 19px;
   height: 44px;
   border-radius: 22px;
@@ -208,7 +209,7 @@
   }
 
   .nav {
-    width: 254px;
+    width: 260px;
     height: 1020px;
   }
 
@@ -337,7 +338,7 @@
     left: 566px;
     width: 168px;
   }
-  .hero__right-part{
+  .hero__right-part {
     margin-left: auto;
   }
 }
