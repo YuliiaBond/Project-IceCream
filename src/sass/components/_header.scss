@@ -750,10 +750,10 @@
     right: 345px;
 
     @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    background-image: url(../images/desktop-hero-iceCream@x2.png);
-  }
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/desktop-hero-iceCream@x2.png);
+    }
   }
 }
 
@@ -774,10 +774,22 @@
   background-position: center;
   background-size: cover;
 
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url(../images/tablet-hero-gierl@x2.png);
+  }
+
   @media screen and (min-width: 1200px) {
     width: 293px;
     height: 232px;
     background-image: url(../images/desktop-hero-gierl.png);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/desktop-hero-gierl@x2.png);
+    }
 
     right: 12px;
   }
