@@ -1,14 +1,14 @@
+// .container {
+// }
 footer {
   background-color: $secondary-bg-color;
 }
-.footer {
-  @media screen and (max-width: 767px) {
-    padding-top: 113px;
-  }
-}
+// .footer {
+//   @media screen and (max-width: 767px) {
+//     padding-top: 113px;
+//   }
+// }
 .footer-box {
-  padding-left: 22px;
-  padding-right: 20px;
   @media screen and (min-width: 768px) {
     padding-left: auto;
     padding-right: auto;
@@ -27,7 +27,7 @@ footer {
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    padding-top: 7px;
+    margin-top: 7px;
   }
 }
 
@@ -53,7 +53,7 @@ footer {
 
   @media screen and (max-width: 767px) {
     margin-bottom: 17px;
-    padding-right: 40px;
+    margin-right: 40px;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -61,7 +61,6 @@ footer {
     font-size: 26px;
     line-height: 1.15;
     letter-spacing: 0.04em;
-    max-width: 340px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -72,7 +71,10 @@ footer {
   }
 }
 .text-wrap {
-  display: block;
+  display: inline-block;
+  @media screen and (max-width: 1199px) {
+    display: block;
+  }
 }
 .text-h3 {
   font-family: $titan;
@@ -86,8 +88,7 @@ footer {
 
   @media screen and (max-width: 767px) {
     margin-bottom: 17px;
-    max-width: 200px;
-    padding-right: 80px;
+    margin-right: 80px;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -103,17 +104,17 @@ footer {
     letter-spacing: 0.06em;
   }
 }
-.footer-social {
-  @media screen and (max-width: 767px) {
-    padding-bottom: 43px;
-  }
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    padding-bottom: 145px;
-  }
-  @media screen and (min-width: 1200px) {
-    padding-bottom: 98px;
-  }
-}
+// .footer-social {
+// @media screen and (max-width: 767px) {
+//   padding-bottom: 43px;
+// }
+// @media screen and (min-width: 768px) and (max-width: 1199px) {
+//   padding-bottom: 145px;
+// }
+// @media screen and (min-width: 1200px) {
+//   padding-bottom: 98px;
+// }
+// }
 
 .footer-social-list {
   display: flex;
@@ -211,16 +212,16 @@ footer {
     text-align: center;
   }
 }
-.text-wrap {
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    flex-wrap: nowrap;
-  }
-  &-footer {
-    @media screen and (max-width: 767px) {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-  }
-}
+// .text-wrap {
+//   @media screen and (min-width: 1200px) {
+//     display: flex;
+//     flex-wrap: nowrap;
+//   }
+//   &-footer {
+//     @media screen and (max-width: 767px) {
+//       display: flex;
+//       flex-wrap: wrap;
+//       justify-content: center;
+//     }
+//   }
+// }
