@@ -1,6 +1,6 @@
 // .container {
 // }
-footer {
+.footer {
   background-color: $secondary-bg-color;
 }
 // .footer {
@@ -53,7 +53,6 @@ footer {
 
   @media screen and (max-width: 767px) {
     margin-bottom: 17px;
-    margin-right: 40px;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -76,6 +75,11 @@ footer {
     display: block;
   }
 }
+.text-wrap-footer {
+  @media screen and (max-width: 1199px) {
+    display: block;
+  }
+}
 .text-h3 {
   font-family: $titan;
   font-style: normal;
@@ -85,11 +89,6 @@ footer {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: $accent-color;
-
-  @media screen and (max-width: 767px) {
-    margin-bottom: 17px;
-    margin-right: 80px;
-  }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     font-size: 48px;
@@ -175,6 +174,7 @@ footer {
 .footer .footer-p-link {
   color: $accent-color;
   font-weight: 700;
+  margin-left: 5px;
 }
 .footer-copy {
   border-top: 1px solid #e1e1e1;
