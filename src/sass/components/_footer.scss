@@ -176,9 +176,10 @@
   font-weight: 700;
   margin-left: 5px;
 }
+.footer-second {
+  border-top: 1px solid $comment-line-color;
+}
 .footer-copy {
-  border-top: 1px solid #e1e1e1;
-
   @media screen and (max-width: 767px) {
     padding-top: 22px;
     padding-bottom: 25px;
