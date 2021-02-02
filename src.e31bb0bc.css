@@ -716,6 +716,8 @@ button {
 .hero {
   position: relative;
   overflow: hidden;
+  margin-right: auto;
+  margin-left: auto;
   height: 502px;
   color: #fff;
   background-color: #ffb8ca;
@@ -2414,9 +2416,10 @@ button {
   margin-left: 5px;
 }
 
-.footer-copy {
+.footer-second {
   border-top: 1px solid #e1e1e1;
 }
+
 @media screen and (max-width: 767px) {
   .footer-copy {
     padding-top: 22px;
