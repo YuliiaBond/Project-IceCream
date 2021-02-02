@@ -696,6 +696,7 @@ button {
 }
 
 .header-wrapper-link {
+  width: 100%;
   font-family: "DM Sans";
   font-weight: 700;
   font-size: 14px;
