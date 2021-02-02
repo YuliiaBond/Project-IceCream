@@ -252,14 +252,14 @@
 .header-wrapper-item {
   display: block;
 
-  margin-left: 21px;
+  padding-left: 21px;
 
   @media screen and (min-width: 576px) {
-    margin-left: 24px;
+    padding-left: 24px;
   }
 
   @media screen and (min-width: 1200px) {
-    margin-left: 0;
+    padding-left: 0;
     &:not(:nth-child(1)) {
       margin-left: 35px;
     }
