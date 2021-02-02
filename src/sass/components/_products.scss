@@ -1,15 +1,15 @@
-// .products {
-//   padding-top: 121px;
-//   padding-bottom: 98px;
-//   @media screen and (min-width: 768px) {
-//     padding-top: 122px;
-//     padding-bottom: 112px;
-//   }
-//   @media screen and (min-width: 1200px) {
-//     padding-top: 128px;
-//     padding-bottom: 119px;
-//   }
-// }
+.products .container {
+  padding-top: 121px;
+  padding-bottom: 98px;
+  @media screen and (min-width: 768px) {
+    padding-top: 122px;
+    padding-bottom: 112px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 127px;
+    padding-bottom: 114px;
+  }
+}
 .products-list {
   justify-content: center;
 
@@ -78,7 +78,7 @@
   line-height: 1.52;
 
   text-align: center;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.01em;
 
   color: $primary-text-color;
   margin-bottom: 30px;
