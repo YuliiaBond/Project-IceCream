@@ -195,15 +195,11 @@
   margin-left: auto;
   margin-top: 20px;
   margin-bottom: 39px;
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     justify-content: start;
-    margin-left: 17px;
-    margin-top: 62px;
-  }
-  @media screen and (min-width: 1200px) {
-    nt: 45;
     margin-left: 0;
+    margin-top: 62px;
   }
 }
 .making-btn::after {
