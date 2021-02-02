@@ -2261,12 +2261,21 @@ button {
   background-color: #fff5f6;
 }
 
+.footer-box {
+  padding-bottom: 43px;
+}
 @media screen and (min-width: 768px) {
   .footer-box {
     padding-left: auto;
     padding-right: auto;
+    padding-bottom: 91px;
     display: flex;
     justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-box {
+    padding-bottom: 97px;
   }
 }
 
