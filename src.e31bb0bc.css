@@ -1103,6 +1103,10 @@ button {
   }
 }
 
+.no-title {
+  display: none;
+}
+
 .products .container {
   padding-top: 121px;
   padding-bottom: 98px;
